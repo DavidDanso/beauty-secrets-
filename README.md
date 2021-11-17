@@ -2,6 +2,10 @@
 
 ## This repo contains all the `project files`.
 
+### Clone project and enable `live-server` in your IDE
+
+## Run `live-server` to start the project in your browser
+
 ## Project Description
 
 ### An e-commerce skin-care page that sells organic skin care products to everyone regardless of age, sex, race etc.
