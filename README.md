@@ -2,7 +2,7 @@
 
 ## This repo contains all the `project files`.
 
-### Clone project and enable `live-server` in your IDE
+##### Clone project and enable `live-server` in your IDE
 
 ## Run `live-server` to start the project in your browser
 
