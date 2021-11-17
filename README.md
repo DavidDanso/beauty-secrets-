@@ -1,20 +1,28 @@
 # BEAUTY SECRET AFRICA
 
-## This repo contains all the `project files` for the project.
+## This repo contains all the `project files`.
 
 ## Project Description
+
+### An e-commerce skin-care page that sells organic skin care products to everyone regardless of age, sex, race etc.
 
 
 ## Project Images
 
 #### `Main Screen`
-<img src="https://github.com/DavidDanso/map-of-europe/blob/master/project_images/trivia_ui.png" width=400 />
+<img src="https://github.com/DavidDanso/beauty-secrets-/blob/master/Assets/snapshoots/main.png" width=400 />
 
-#### `Trivia Question Screen`
-<img src="https://github.com/DavidDanso/map-of-europe/blob/master/project_images/start_trivia.png" width=400 />
+#### `Home Screen`
+<img src="https://github.com/DavidDanso/beauty-secrets-/blob/master/Assets/snapshoots/home.png" width=400 />
 
-#### `End Trivia Screen`
-<img src="https://github.com/DavidDanso/map-of-europe/blob/master/project_images/end_trivia.png" width=400 />
+#### `Shop Screen`
+<img src="https://github.com/DavidDanso/beauty-secrets-/blob/master/Assets/snapshoots/shop.png" width=400 />
 
-#### `Final Score Screen`
-<img src="https://github.com/DavidDanso/map-of-europe/blob/master/project_images/final_score.png" width=400 />
+#### `Product Screen`
+<img src="https://github.com/DavidDanso/beauty-secrets-/blob/master/Assets/snapshoots/product.png" width=400 />
+
+#### `Checkout Screen`
+<img src="https://github.com/DavidDanso/beauty-secrets-/blob/master/Assets/snapshoots/checkout_1.png" width=400 />
+
+#### `Checkout Screen`
+<img src="https://github.com/DavidDanso/beauty-secrets-/blob/master/Assets/snapshoots/checkout_2.png" width=400 />
