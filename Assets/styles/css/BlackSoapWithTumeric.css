@@ -1,0 +1,992 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+    box-sizing: border-box;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: #fcf1ee;
+}
+a:hover {
+    text-decoration: none;
+}
+#main {
+  opacity: 0;
+  transition: opacity 200ms;
+}
+#main.loaded {
+  opacity: 1;
+}
+/******************************************************* NAVIGATION *************************************************************/
+#mainNav {
+    background-color: #fcf1ee;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+.navbar-brand #logo {
+    width: 150px;
+}
+.navbar-toggler {
+  position: absolute;
+  width: 40px;
+  top: 27px;
+  right: 30px;
+  padding: 1px;
+    border: 0;
+  z-index: 1;
+}
+.navbar-toggler span {
+  display: block;
+  background: #231F20;
+  width: 30px;
+  height: 1px;
+  transition: 300ms linear all;
+}
+.navbar-toggler span:nth-child(1),
+.navbar-toggler span:nth-child(3) {
+  width: 15px;
+}
+.navbar-toggler span:nth-child(2) {
+  width: 37px;
+  margin: 5px 0;
+}
+.navbar-toggler span:nth-child(3) {
+    float: right;
+}
+.navbar-toggler:hover span:nth-child(1),
+.navbar-toggler:hover span:nth-child(3) {
+  width: 35px;
+}
+.navbar-brand {
+    margin-left: 0%;
+}
+.nav-link.active,
+.nav-link:hover {
+ color: #345e68 !important;
+}
+.nav-item a {
+    padding: 7px 25px !important;
+    font-size: 16px;
+    color: #999;
+    letter-spacing: 3px;
+    font-family: 'Open Sans Condensed';
+    text-transform: uppercase;
+}
+.nav-item a span {
+    color: #231F20;
+}
+.navbar-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-item .icon-cart {
+    width: 10%;
+    color: #999;
+}
+.nav-item #cart:hover {
+    color: #231F20 !important;
+}
+.nav-item ion-icon {
+    font-size: 20px;
+    color: #999;
+}
+.nav-item ion-icon:hover {
+    color: #231F20;
+}
+/************************************************* Hero-Page ****************************************************/
+#hero {
+    margin-top: 40%;
+}
+.hero-intro {
+    margin: 5%;
+}
+.btn--arrow__icon {
+    transform: rotate(180deg);
+    width: 50px;
+    vertical-align: middle;
+}
+.hero-intro a {
+    font-size: 18px;
+    color: #231F20;
+    font-family: 'Open Sans Condensed';
+    letter-spacing: 2px;
+}
+#hero-img {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 20%;
+    object-fit: contain;
+    margin-bottom: -3%;
+}
+.hero-intro h1 {
+    margin-top: 20%;
+    text-align: left;
+    font-family: 'Playfair Display';
+    font-size: 25px;
+    color: #231F20;
+    letter-spacing: 1px;
+    margin-bottom: 8%;
+}
+.hero-intro h6 {
+    text-align: left;
+    font-size: 17px;
+    color: #979797;
+    font-family: 'Open Sans Condensed';
+    letter-spacing: 1px;
+    margin-bottom: 8%;
+}
+.hero-intro p {
+    text-align: left;
+    font-size: 19px;
+    color: #231F20;
+    line-height: 1.6;
+    font-family: 'Open Sans Condensed';
+    letter-spacing: 2px;
+    margin-bottom: 8%;
+}
+.hero-intro li {
+    text-align: left;
+    font-size: 17px;
+    font-family: 'Open Sans Condensed';
+    list-style: none;
+    letter-spacing: 2px;
+    color: #979797;
+    margin-bottom: 3%;
+}
+.hero-intro .quantity {
+    padding: 7px 15px;
+    background: transparent;
+    border: 1px solid #C9B793;
+    color: #231F20;
+    text-align: center;
+    margin-bottom: 8%;
+    width: 70%;
+    margin: 0 auto;
+}
+.hero-intro .quantity h5 {
+    padding-left: 3%;
+    padding-top: 3%;
+    font-size: 18px;
+    color: #231F20;
+    font-family: 'Open Sans Condensed';
+    letter-spacing: 1px;
+}
+.hero-intro .quantity h5 i {
+    font-size: 17px;
+    color: #C9B793;
+}
+.hero-intro .quantity h5 #left {
+    padding-left: 5%;
+}
+.hero-intro .quantity h5 span {
+    padding: 4%;
+    color: #979797;
+}
+.hero-intro .btn {
+    background: #C9B793;
+    color: #fff;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0%;
+    width: 50%;
+    font-family: 'Open Sans Condensed';
+    font-size: 17px;
+    letter-spacing: 1px;
+    margin-bottom: 10%;
+    margin-top: 5%;
+    transition: transform 0.5s;
+}
+.hero-intro .icon-cart {
+    width: 12%;
+    color: #fff;
+    margin-right: 8px;
+}
+.hero-intro .btn:hover {
+    color: #fff;
+    background: #dcd1b4;
+    border: 1px solid transparent;
+    transition: transform 0.5s;
+    box-shadow: 0 10px 10px -10px rgba(0,0,0,0.35);
+}
+/******************************************************* Msg-Page *************************************************************/
+#msg {
+    margin-top: 20%;
+    padding-top: 15%;
+    background: url("../../Images/footer-img.jpeg") no-repeat 50% 50%;
+    background-position: center center;
+    background-size: cover;
+}
+#msg h2 {
+    text-align: center;
+    font-family: 'Playfair Display';
+    color: #fff;
+    font-size: 35px;
+    letter-spacing: 1px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+#msg p {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    color: #fff;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    padding-bottom: 15%;
+}
+/******************************************************* Sub-Footer *************************************************************/
+#sub {
+    background: #333;
+    margin-top: -4%;
+    padding-top: 10%;
+}
+#sub form {
+    padding-bottom: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sub form button {
+    background: #C9B793;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    border-radius: 0%;
+}
+#sub h3 {
+    text-align: center;
+    font-family: 'Playfair Display';
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 1px;
+    padding-bottom: 4%;
+}
+#sub p {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    color: #979797;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    padding-bottom: 5%;
+}
+#sub ::placeholder {
+    color: #8897A0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+#sub input {
+    border: transparent;
+    border-radius: 0%;
+}
+/******************************************************* Footer *************************************************************/
+footer p {
+    margin-top: 5%;
+    margin-bottom: 8%;
+    text-align: center;
+    color: #231F20;
+    font-size: 17px;
+    font-family: 'Open Sans Condensed';
+}
+footer .footer-intro {
+    margin-top: 10%;
+    margin-bottom: 8%;
+}
+footer li {
+    display: inline-block;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-family: 'Open Sans Condensed';
+    list-style: none;
+}
+footer .faceB {
+    margin-left: -40%;
+    color: #023670;
+}
+footer .insta {
+    padding-left: 30%;
+    color: #cf95a6;
+}
+footer #second {
+    background: transparent;
+    display: block;
+    display: inline-block;
+    cursor: pointer;
+}
+footer #second::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #023670;
+    transition: width .3s;
+}
+footer #second:hover::after {
+    width: 100%;
+    transition: width .3s;
+    border: 1px solid transparent;
+}
+footer #third {
+    background: transparent;
+    display: block;
+    display: inline-block;
+    cursor: pointer;
+}
+footer #third::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #cf95a6;
+    transition: width .3s;
+}
+footer #third:hover::after {
+    width: 100%;
+    transition: width .3s;
+    border: 1px solid transparent;
+}
+/*************************************************** Media-Query **************************************************/
+@media(min-width: 300px) {
+    #mainNav.navbar-shrink {
+        padding-top: 3px;
+        padding-bottom: 3px;
+        background-color: #fff;
+    }
+    #mainNav.navbar-color {
+        padding-top: 3px;
+        padding-bottom: 3px;
+        background-color: #fcf1ee;
+    }
+}
+
+/********************** Extra small devices (portrait phones, less than 576px) ****************************/
+@media (max-width: 575.98px) { 
+    .nav-item a {
+    margin-left: -4%;
+}
+    .icon-cart {
+    margin-left: -1%;
+}
+    #mainNav.navbar-shrink .navbar-toggler {
+      top: 25px;
+}
+    #mainNav.navbar-shrink .navbar-toggler span {
+      background: #122947;
+}
+    #mainNav.navbar-shrink .nav-link.active {
+        color: #999 !important;
+}
+    #mainNav.navbar-shrink .nav-item a {
+    color: #979797 !important;
+}
+    #mainNav.navbar-shrink .nav-link:hover {
+           color: #999999 !important;
+} 
+    #mainNav.navbar-shrink i {
+    padding-bottom: 4%;
+ }
+    #msg {
+        padding-bottom: 10%;
+    }
+    #msg h2 {
+    padding-bottom: 0%;
+}
+    #msg p {
+    padding: 5%;
+}
+}
+
+/************************ Small devices (landscape phones, 576px and up) *****************************/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .nav-item a {
+    margin-left: -1%;
+}
+    .navbar-brand #logo {
+        margin-top: 2%;
+}
+    .nav-item .icon-cart {
+    margin-left: -1%;
+    width: 30px;
+}
+    .nav-item ion-icon {
+    font-size: 19px;
+    }
+    #mainNav.navbar-shrink .nav-link.active {
+        color: #999999 !important;
+}
+    #mainNav.navbar-shrink .nav-item a {
+    color: #122947 !important;
+    margin-left: -12%;
+}
+    #mainNav.navbar-shrink .nav-link:hover {
+           color: #999 !important;
+}
+    #hero {
+    margin-top: 25%;
+}
+.btn--arrow__icon {
+    transform: rotate(180deg);
+    width: 50px;
+}
+.hero-intro a {
+    font-size: 18px;
+    letter-spacing: 2px;
+    transition: all 0.5s ease-out;
+}
+.hero-intro a:hover {
+    color: #C9B793;
+    transform: translateY(-8px);
+}
+#hero-img {
+    width: 65%;
+    margin-left: 18%;
+    margin-top: 10%;
+    object-fit: contain;
+    margin-bottom: -4%;
+}
+.hero-intro h1 {
+    margin-top: 20%;
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-bottom: 5%;
+}
+.hero-intro h6 {
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-bottom: 4%;
+}
+.hero-intro p {
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 5%;
+}
+.hero-intro li {
+    font-size: 17px;
+    letter-spacing: 2px;
+    margin-bottom: 2%;
+}
+.hero-intro .quantity {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 4%;
+}
+.hero-intro .quantity h5 {
+    padding-left: 3%;
+    padding-top: 3%;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.hero-intro .btn {
+    width: 40%;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 10%;
+    transition: transform 0.5s;
+}
+.hero-intro .icon-cart {
+    width: 12%;
+    margin-right: 8px;
+}
+ #msg {
+    margin-top: 10%;
+    padding-top: 5%;
+}
+#msg h2 {
+    font-size: 40px;
+    padding-top: 5%;
+    padding-bottom: 0%;
+}
+#msg p {
+    font-size: 16px;
+    padding-top: 2%;
+    padding-bottom: 10%;
+}
+#sub {
+    padding-top: 5%;
+}
+#sub form {
+    padding-bottom: 10%;
+}
+#sub form button {
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+#sub h3 {
+    font-size: 28px;
+    padding-bottom: 2%;
+}
+#sub p {
+    font-size: 15px;
+    padding-bottom: 5%;
+    color: #979797;
+}
+#sub ::placeholder {
+    font-size: 14px;
+    letter-spacing: 1px;
+ }
+    footer p {
+    margin-bottom: 2%;
+    margin-top: 3%;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+    footer .footer-intro {
+    margin-top: 5%;
+    margin-bottom: 0%;
+}
+    footer li {
+    font-size: 18px;
+    letter-spacing: 2px;
+ }
+}
+
+/***************************** Medium devices (tablets, 768px and up) ********************************/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .nav-item a {
+    margin-left: -1%;
+}
+    .navbar-brand #logo {
+    width: 180px;
+        margin-top: 2%;
+}
+    .nav-item .icon-cart {
+    margin-left: -1%;
+    width: 30px;
+}
+    .nav-item ion-icon {
+    font-size: 19px;
+    }
+    #mainNav.navbar-shrink .nav-link.active {
+        color: #999999 !important;
+}
+    #mainNav.navbar-shrink .nav-item a {
+    color: #999 !important;
+}
+    #mainNav.navbar-shrink .nav-link:hover {
+           color: #999 !important;
+}
+    #hero {
+    margin-top: 25%;
+}
+.btn--arrow__icon {
+    transform: rotate(180deg);
+    width: 50px;
+}
+.hero-intro a {
+    font-size: 18px;
+    letter-spacing: 2px;
+    transition: all 0.5s ease-out;
+}
+.hero-intro a:hover {
+    color: #C9B793;
+    transform: translateY(-8px);
+}
+#hero-img {
+    width: 65%;
+    margin-left: 18%;
+    margin-top: 65%;
+    object-fit: contain;
+    margin-bottom: -2%;
+}
+.hero-intro h1 {
+    margin-top: 20%;
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-bottom: 5%;
+}
+.hero-intro h6 {
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-bottom: 4%;
+}
+.hero-intro p {
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 5%;
+}
+.hero-intro li {
+    font-size: 17px;
+    letter-spacing: 2px;
+    margin-bottom: 2%;
+}
+.hero-intro .quantity {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 4%;
+}
+.hero-intro .quantity h5 {
+    padding-left: 3%;
+    padding-top: 3%;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.hero-intro .btn {
+    width: 75%;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 10%;
+    transition: transform 0.5s;
+}
+.hero-intro .icon-cart {
+    width: 12%;
+    margin-right: 8px;
+}
+ #msg {
+    margin-top: 10%;
+    padding-top: 5%;
+}
+#msg h2 {
+    font-size: 40px;
+    padding-top: 5%;
+    padding-bottom: 0%;
+}
+#msg p {
+    font-size: 16px;
+    padding-top: 2%;
+    padding-bottom: 10%;
+}
+#sub {
+    padding-top: 5%;
+}
+#sub form {
+    padding-bottom: 10%;
+    float: right;
+}
+#sub form button {
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+#sub h3 {
+    font-size: 28px;
+    padding-bottom: 2%;
+}
+#sub p {
+    font-size: 15px;
+    padding-bottom: 5%;
+    color: #979797;
+}
+#sub ::placeholder {
+    font-size: 14px;
+    letter-spacing: 1px;
+ }
+    footer p {
+    margin-bottom: 2%;
+    margin-top: 3%;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+    footer .footer-intro {
+    margin-top: 5%;
+    margin-bottom: 0%;
+}
+    footer li {
+    font-size: 18px;
+    letter-spacing: 2px;
+ }
+}
+
+/********************************** Large devices (desktops, 992px and up) *********************************/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .nav-item a {
+    padding: 7px 25px !important;
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+    .navbar-brand #logo {
+    width: 190px;
+    margin-top: 2%;
+}
+    .nav-item .icon-cart {
+    width: 28px;
+}
+    .nav-item ion-icon {
+        font-size: 19px;
+    }
+    #mainNav {
+    background-color: transparent;
+}
+    #mainNav.navbar-shrink .nav-link.active {
+        color: #999999 !important;
+}
+    #mainNav.navbar-shrink .nav-item a {
+    color: #999999 !important;
+}
+    #mainNav.navbar-shrink .nav-link:hover {
+           color: #999 !important;
+}
+    #hero {
+    margin-top: 20%;
+}
+.btn--arrow__icon {
+    transform: rotate(180deg);
+    width: 50px;
+}
+.hero-intro a {
+    font-size: 18px;
+    letter-spacing: 2px;
+    transition: all 0.5s ease-out;
+}
+.hero-intro a:hover {
+    color: #C9B793;
+    transform: translateY(-8px);
+}
+#hero-img {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 40%;
+    object-fit: contain;
+    margin-bottom: -2%;
+}
+.hero-intro h1 {
+    margin-top: 20%;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 5%;
+}
+.hero-intro h6 {
+    font-size: 17px;
+    letter-spacing: 2px;
+    margin-bottom: 4%;
+}
+.hero-intro p {
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 5%;
+}
+.hero-intro li {
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 2%;
+}
+.hero-intro .quantity {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 4%;
+}
+.hero-intro .quantity h5 {
+    padding-left: 3%;
+    padding-top: 3%;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.hero-intro .btn {
+    width: 50%;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 10%;
+    transition: transform 0.5s;
+}
+.hero-intro .icon-cart {
+    width: 12%;
+    margin-right: 8px;
+} 
+ #msg {
+    margin-top: 10%;
+    padding-top: 5%;
+}
+#msg h2 {
+    font-size: 50px;
+    padding-top: 5%;
+    padding-bottom: 0%;
+}
+#msg p {
+    font-size: 16px;
+    padding-top: 2%;
+    padding-bottom: 10%;
+}
+#sub {
+    padding-top: 5%;
+}
+#sub form {
+    padding-bottom: 10%;
+    float: right;
+}
+#sub form button {
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+#sub h3 {
+    font-size: 30px;
+    padding-bottom: 2%;
+}
+#sub p {
+    font-size: 16px;
+    padding-bottom: 5%;
+}
+#sub ::placeholder {
+    font-size: 14px;
+    letter-spacing: 1px;
+ }
+    footer p {
+    margin-bottom: 2%;
+    margin-top: 3%;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+    footer .footer-intro {
+    margin-top: 5%;
+    margin-bottom: 0%;
+}
+    footer li {
+    font-size: 20px;
+    letter-spacing: 2px;
+ }
+}
+
+/************************ Extra large devices (large desktops, 1200px and up) ********************************/
+@media (min-width: 1200px) {
+    .nav-item a {
+    padding: 7px 25px !important;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+    .navbar-brand #logo {
+    width: 180px;
+        margin-top: 2%;
+}
+    .nav-item .icon-cart {
+    width: 30px !important;
+}
+    .nav-item ion-icon {
+        font-size: 20px;
+    }
+    #mainNav {
+    background-color: transparent;
+}
+    #mainNav.navbar-shrink .nav-link.active {
+        color: #999999 !important;
+}
+    #mainNav.navbar-shrink .nav-item a {
+    color: #999 !important;
+}
+    #mainNav.navbar-shrink .nav-link:hover {
+           color: #5e62d1 !important;
+}
+#hero {
+    margin-top: 18%;
+}
+.btn--arrow__icon {
+    transform: rotate(180deg);
+    width: 50px;
+}
+.hero-intro a {
+    font-size: 18px;
+    letter-spacing: 2px;
+    transition: all 0.5s ease-out;
+}
+.hero-intro a:hover {
+    color: #C9B793;
+    transform: translateY(-8px);
+}
+#hero-img {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 20%;
+    object-fit: contain;
+    margin-bottom: -2%;
+}
+.hero-intro h1 {
+    margin-top: 20%;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 5%;
+}
+.hero-intro h6 {
+    font-size: 17px;
+    letter-spacing: 2px;
+    margin-bottom: 4%;
+}
+.hero-intro p {
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 5%;
+}
+.hero-intro li {
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 2%;
+}
+.hero-intro .quantity {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 4%;
+}
+.hero-intro .quantity h5 {
+    padding-left: 3%;
+    padding-top: 3%;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.hero-intro .btn {
+    width: 30%;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 10%;
+    transition: transform 0.5s;
+}
+.hero-intro .icon-cart {
+    width: 12%;
+    margin-right: 8px;
+}   
+ #msg {
+    margin-top: 10%;
+    padding-top: 5%;
+}
+#msg h2 {
+    font-size: 60px;
+    padding-top: 5%;
+    padding-bottom: 0%;
+}
+#msg p {
+    font-size: 18px;
+    padding-top: 2%;
+    padding-bottom: 10%;
+}
+#sub {
+    padding-top: 5%;
+}
+#sub form {
+    padding-bottom: 10%;
+    float: right;
+}
+#sub form button {
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+#sub h3 {
+    font-size: 35px;
+    padding-bottom: 2%;
+}
+#sub p {
+    font-size: 17px;
+    padding-bottom: 5%;
+}
+#sub ::placeholder {
+    font-size: 14px;
+    letter-spacing: 1px;
+ }
+    footer p {
+    margin-bottom: 2%;
+    margin-top: 3%;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+    footer .footer-intro {
+    margin-top: 5%;
+    margin-bottom: 0%;
+}
+    footer li {
+    font-size: 18px;
+    letter-spacing: 2px;
+ }
+}

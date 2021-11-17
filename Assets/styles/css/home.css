@@ -1,0 +1,1881 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+    box-sizing: border-box;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    background: #fcf1ee;
+}
+a:hover {
+    text-decoration: none;
+}
+#main {
+  opacity: 0;
+  transition: opacity 200ms;
+}
+#main.loaded {
+  opacity: 1;
+}
+/******************************************************* NAVIGATION *************************************************************/
+#mainNav {
+    background-color: #F6D0CB;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+.navbar-brand #logo {
+    width: 150px;
+}
+.navbar-toggler {
+  position: absolute;
+  width: 40px;
+  top: 27px;
+  right: 30px;
+  padding: 1px;
+    border: 0;
+  z-index: 1;
+}
+.navbar-toggler span {
+  display: block;
+  background: #231F20;
+  width: 30px;
+  height: 1px;
+  transition: 300ms linear all;
+}
+.navbar-toggler span:nth-child(1),
+.navbar-toggler span:nth-child(3) {
+  width: 15px;
+}
+.navbar-toggler span:nth-child(2) {
+  width: 37px;
+  margin: 5px 0;
+}
+.navbar-toggler span:nth-child(3) {
+    float: right;
+}
+.navbar-toggler:hover span:nth-child(1),
+.navbar-toggler:hover span:nth-child(3) {
+  width: 35px;
+}
+.navbar-brand {
+    margin-left: 0%;
+}
+.nav-link.active,
+.nav-link:hover {
+ color: #999999 !important;
+}
+.nav-item a {
+    padding: 7px 25px !important;
+    font-size: 16px;
+    color: #231F20;
+    letter-spacing: 3px;
+    font-family: 'Open Sans Condensed';
+    text-transform: uppercase;
+}
+.navbar-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-item .icon-cart {
+    width: 10%;
+    color: #231F20;
+}
+.nav-item ion-icon {
+    font-size: 20px;
+    color: #231F20;
+}
+/*************************************************** Hero-Page ****************************************************/
+#hero {
+    padding-top: 40%;
+    margin-top: 10%;
+    background: url(../../Images/home-img.jpg) no-repeat 50% 50%;
+    background-position: center center;
+    background-size: cover;
+    padding-bottom: 10%;
+}
+.hero-intro {
+    margin: 3%;
+}
+.ml7 {
+    position: relative;
+    font-size: 28px;
+    letter-spacing: 2px;
+    font-family: 'Playfair Display';
+    color: #231F20;
+    text-transform: uppercase;
+}
+.ml7 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+.ml7 .letter {
+    transform-origin: 0 100%;
+    display: inline-block;
+    line-height: 1em;
+}
+.ml8 {
+    position: relative;
+    font-size: 28px;
+    letter-spacing: 2px;
+    font-family: 'Playfair Display';
+    color: #231F20;
+    text-transform: uppercase;
+    margin-bottom: 10%;
+}
+.ml8 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+.ml8 .letter {
+    transform-origin: 0 100%;
+    display: inline-block;
+    line-height: 1em;
+}
+.hero-intro p {
+    font-family: 'Open Sans Condensed';
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 2px;
+    margin-bottom: 10%;
+    text-transform: capitalize;
+    color: #231F20;
+}
+.hero-intro a {
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 10px 30px;
+    letter-spacing: 2px;
+    font-family: 'Open Sans Condensed';
+    font-size: 19px;
+    background: #C9B793;
+    color: #fff;
+    border-radius: 2%;
+    margin-bottom: 10%;
+    transition: transform 0.5s;
+}
+.hero-intro a:hover {
+    color: #fff;
+    background: #dcd1b4;
+    border: 1px solid transparent;
+    transition: transform 0.5s;
+    box-shadow: 0 10px 10px -10px rgba(0,0,0,0.35);
+}
+/*********************************** Product-Page *****************************************/
+#join {
+    margin-top: 15%;
+}
+.join-intro h3 {
+    font-family: 'Playfair Display';
+    color: #231F20;
+    font-size: 35px;
+    letter-spacing: 2px;
+    margin-left: 10%;
+    /*color: transparent;
+    -webkit-text-stroke: 1px #231F20;*/
+}
+.join-intro #lax-move {
+    margin-left: 22%;
+}
+/*********************************** Wholesale-Page *****************************************/
+#wholesale {
+    margin-top: 20%;
+}
+#img-col .img-slider {
+  position: relative;
+    overflow: hidden;
+}
+#img-col .img-slider img {
+  width: 100%;
+  height: auto;
+  transition: all 1.5s ease;
+}
+#img-col .img-slider:hover img {
+  transform: scale(1.1);
+}
+#txt-col {
+    background: #eeeeee;
+    padding: 5%;
+}
+#txt-col h2 {
+    font-family: 'Playfair Display';
+    color: #231F20;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-top: 5%;
+}
+#txt-col #line-first {
+    background: #231F20;
+    width: 25%;
+    height: 1px;
+    margin-top: -1%;
+}
+#txt-col p {
+    font-family: 'Open Sans Condensed';
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 3px;
+    margin-top: 8%;
+    margin-bottom: 15%;
+    color: #231F20;
+}
+#txt-col a {
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 10px 30px;
+    letter-spacing: 2px;
+    font-family: 'Open Sans Condensed';
+    font-size: 19px;
+    background: #C9B793;
+    color: #fff;
+    border-radius: 2%;
+    margin-bottom: 10%;
+    transition: transform 0.9s;
+}
+#txt-col a:hover {
+    color: #fff;
+    background: #dcd1b4;
+    border: 1px solid transparent;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 10px -10px rgba(0,0,0,0.35);
+}
+#wholesale .modal-title {
+    color: #231F20;
+    letter-spacing: 3px;
+    font-size: 20px;
+    margin-top: 3%;
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+}
+#wholesale label {
+    color: #231F20;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+#wholesale small {
+    color: #e0e2ee;
+    font-weight: 200;
+    font-family: sans-serif;
+}
+#wholesale input {
+    border: 1px solid #e0e2ee;
+}
+#wholesale textarea {
+    border: 1px solid #e0e2ee;
+}
+/*********************************** Product-Page *****************************************/
+/*#product {
+    margin-top: 20%;
+}
+.product-intro {
+    margin: 5%;
+}
+.product-intro h2 {
+    color: #231F20;
+    letter-spacing: 3px;
+    font-size: 28px;
+    margin-bottom: 5%;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+}
+.product-intro p {
+    color: #231F20;
+    letter-spacing: 3px;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15%;
+    font-family: 'Open Sans Condensed';
+    margin-bottom: 30%;
+}
+.product-intro #first h6 {
+    position: absolute;
+    transform: rotate(90deg);
+    top: 50%;
+    left: -10%;
+    letter-spacing: 3px;
+    font-size: 18px;
+    color: transparent;
+    -webkit-text-stroke: 1px #7c8082;
+    font-family: 'Playfair Display', serif;
+}
+.product-intro #second h6 {
+    position: absolute;
+    transform: rotate(90deg);
+    top: 50%;
+    left: -10%;
+    letter-spacing: 3px;
+    font-size: 18px;
+    color: transparent;
+    -webkit-text-stroke: 1px #7c8082;
+    font-family: 'Playfair Display', serif;
+}
+.product-intro #third h6 {
+    position: absolute;
+    transform: rotate(90deg);
+    top: 50%;
+    right: -12%;
+    letter-spacing: 3px;
+    font-size: 18px;
+    color: transparent;
+    -webkit-text-stroke: 1px #7c8082;
+    font-family: 'Playfair Display', serif;
+}*/
+/*********************************** About-Page *****************************************/
+#about {
+    margin-top: 10%;
+}
+.about-intro {
+    margin: 5%;
+}
+.about-intro h5 {
+    color: #231F20;
+    letter-spacing: 3px;
+    font-size: 25px;
+    margin-bottom: 5%;
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+}
+.about-intro p {
+    color: #231F20;
+    letter-spacing: 3px;
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 15%;
+    font-family: 'Open Sans Condensed';
+    margin-bottom: 10%;
+}
+.about-intro img {
+    width: 80%;
+}
+#first-link {
+    color: #231F20;
+    font-size: 20px;
+    margin-left: -2%;
+    font-family: 'Open Sans Condensed';
+    transition: 0.5s ease-out; 
+    cursor: pointer;
+    margin-bottom: 10%;
+}
+ion-icon {
+    font-size: 18px;
+    color: #f95b5b;
+}
+#first-link:hover {
+    transform: translateX(8px);
+}
+#first-link .left {
+    display: none;
+    vertical-align: middle;
+}
+#first-link .right {
+    vertical-align: middle;
+}
+#first-link:hover .right {
+    display: none;
+}
+#first-link:hover .left {
+    display: inline-block;
+}
+/*********************************** Story-Page *****************************************/
+#story {
+    margin-top: 25%;
+    height: 55vh;
+    width: 100%;
+}
+.story-intro {
+    margin: 5%;
+}
+#story h6 {
+    font-size: 40px;
+    vertical-align: middle;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 50px;
+    color: #231F20;
+    margin-bottom: 5%;
+    font-family: 'Playfair Display', serif;
+}
+#story p {
+    font-size: 14px;
+    vertical-align: middle;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 1.6;
+    color: #231F20;
+    margin-bottom: 25%;
+    font-family: 'Playfair Display', serif;
+}
+#story #img {
+    position: absolute;
+    z-index: 1;
+    height: 20%;
+    width: auto;
+    overflow: hidden;
+}
+#story .img-one {
+    margin-top: 5%;
+    margin-left: 5%;
+    animation: circle1 30s linear infinite;
+}
+#story .img-two {
+    margin-top: 30%;
+    margin-left: 10%;
+    animation: circle2 30s linear infinite;
+}
+#story .img-three {
+    margin-top: -5%;
+    margin-left: 30%;
+    animation: circle3 40s linear infinite;
+}
+#story .img-four {
+    margin-top: -5%;
+    margin-left: 80%;
+    animation: circle4 50s linear infinite;
+}
+#story .img-five {
+    margin-top: 15%;
+    margin-left: 70%;
+    animation: circle5 70s linear infinite;
+}
+#story .img-six {
+    animation: circle6 70s linear infinite;
+}
+#story .img-seven {
+    margin-top: 40%;
+    margin-left: 40%;
+    animation: circle7 50s linear infinite;
+}
+@keyframes circle1 {
+    from {
+        transform: rotate(0deg)
+            translate(-30px)
+            rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg)
+            translate(-30px)
+            rotate(-360deg);
+    }
+}
+@keyframes circle2 {
+    from {
+        transform: rotate(360deg)
+            translate(-30px)
+            rotate(-360deg);
+    }
+    to {
+        transform: rotate(0deg)
+            translate(-30px)
+            rotate(0deg);
+    }
+}
+@keyframes circle3 {
+    from {
+        transform: rotate(360deg)
+            translate(-30px)
+            rotate(-360deg);
+    }
+    to {
+        transform: rotate(0deg)
+            translate(-30px)
+            rotate(0deg);
+    }
+}
+@keyframes circle4 {
+    from {
+        transform: rotate(360deg)
+            translate(-60px)
+            rotate(-360deg);
+    }
+    to {
+        transform: rotate(0deg)
+            translate(-60px)
+            rotate(0deg);
+    }
+}
+@keyframes circle5 {
+    from {
+        transform: rotate(360deg)
+            translate(-80px)
+            rotate(-360deg);
+    }
+    to {
+        transform: rotate(0deg)
+            translate(-80px)
+            rotate(0deg);
+    }
+}
+@keyframes circle6 {
+    from {
+        transform: rotate(360deg)
+            translate(-60px)
+            rotate(-360deg);
+    }
+    to {
+        transform: rotate(0deg)
+            translate(-30px)
+            rotate(0deg);
+    }
+}
+@keyframes circle7 {
+    from {
+        transform: rotate(360deg)
+            translate(-50px)
+            rotate(-360deg);
+    }
+    to {
+        transform: rotate(0deg)
+            translate(-50px)
+            rotate(0deg);
+    }
+}
+/****************************************** Footer *******************************************/
+#footer {
+    margin-top: -20%;
+}
+.main-footer {
+  margin: 5%;
+}
+.main-footer p {
+  font-family: 'Open Sans Condensed';
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #231F20;
+  font-weight: 200;
+}
+.main-footer i {
+    color: #8492af;
+    font-size: 20px;
+}
+.main-footer i:hover {
+    color: #231F20;
+}
+.main-footer #first-footer {
+  margin-bottom: 25px;
+}
+.main-footer h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #231F20;
+  font-weight: bolder;
+}
+#first-line {
+  background: #999;
+  width: 50px;
+  height: 1px;
+  margin-top: -5px;
+}
+.main-footer #first-footer li {
+  list-style: none;
+}
+.main-footer #first-footer li a {
+  color: #231F20;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 200;
+  font-family: 'Open Sans Condensed';
+}
+.main-footer #first-footer li a:hover {
+  color: #8492af;
+}
+.main-footer #second-footer {
+  margin-bottom: 20px;
+}
+#second-line {
+  background: #999;
+  width: 50px;
+  height: 1px;
+  margin-top: -5px;
+}
+.main-footer #second-footer li {
+  list-style: none;
+}
+.main-footer #second-footer li a {
+  color: #231F20;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 200;
+  font-family: 'Open Sans Condensed';
+}
+.main-footer #second-footer li a:hover {
+  color: #8492af;
+}
+.main-footer #third-footer {
+  margin-bottom: 20px;
+}
+.main-footer .faceB {
+    color: #C9B793;
+}
+.main-footer .insta {
+    color: #C9B793;
+}
+.main-footer #second {
+    background: transparent;
+    display: block;
+    display: inline-block;
+    cursor: pointer;
+}
+.main-footer #second::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #8492af;
+    transition: width .3s;
+}
+.main-footer #second:hover::after {
+    width: 100%;
+    transition: width .3s;
+    border: 1px solid transparent;
+}
+.main-footer #third {
+    background: transparent;
+    display: block;
+    display: inline-block;
+    cursor: pointer;
+}
+.main-footer #third::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #8492af;
+    transition: width .3s;
+}
+.main-footer #third:hover::after {
+    width: 100%;
+    transition: width .3s;
+    border: 1px solid transparent;
+}
+.main-footer form {
+    padding-bottom: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-footer form button {
+    background: #C9B793;
+    color: #fff;
+    font-weight: 200;
+    font-family: 'Open Sans Condensed';
+    font-size: 15px;
+    letter-spacing: 1px;
+    border-radius: 0%;
+}
+.main-footer ::placeholder {
+    color: #8897A0;
+    font-family: 'Open Sans Condensed';
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.main-footer input {
+    border: transparent;
+    border-radius: 0%;
+}
+/*************************************************** Media-Query **************************************************/
+@media(min-width: 300px) {
+    #mainNav.navbar-shrink {
+        padding-top: 3px;
+        padding-bottom: 3px;
+        background-color: #fff;
+    }
+    #mainNav.navbar-color {
+        padding-top: 3px;
+        padding-bottom: 3px;
+        background-color: #fcf1ee;
+    }
+}
+
+/********************** Extra small devices (portrait phones, less than 576px) ****************************/
+@media (max-width: 575.98px) { 
+  .nav-item a {
+    margin-left: -4%;
+}
+    .icon-cart {
+    margin-left: -1%;
+}
+    #mainNav.navbar-shrink .navbar-toggler {
+      top: 25px;
+}
+    #mainNav.navbar-shrink .navbar-toggler span {
+      background: #122947;
+}
+    #mainNav.navbar-shrink .nav-link.active {
+        color: #999 !important;
+}
+    #mainNav.navbar-shrink .nav-item a {
+    color: #979797 !important;
+}
+    #mainNav.navbar-shrink .nav-link:hover {
+           color: #999999 !important;
+} 
+    #mainNav.navbar-shrink i {
+    padding-bottom: 4%;
+ }
+    .hero-intro img {
+    display: none;
+}
+    .hero-intro p br {
+    display: none;
+}
+/*.product-intro #first {
+    width: 60%;
+    margin-left: 40%;
+    margin-bottom: 20%;
+}
+.product-intro #second {
+    width: 60%;
+    margin-right: 40%;
+    margin-bottom: 20%;
+}*/
+    #story .img-five {
+    display: none;
+}
+    #story .img-four {
+    display: none;
+}
+    #story .img-six {
+    display: none;
+}
+    #bouncebtn i {
+        display: none;
+    }
+}
+
+/************************ Small devices (landscape phones, 576px and up) *****************************/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .nav-item a {
+    margin-left: -1%;
+}
+    .navbar-brand #logo {
+        margin-top: 2%;
+}
+    .nav-item .icon-cart {
+    margin-left: -1%;
+    width: 30px;
+}
+    .nav-item ion-icon {
+    font-size: 19px;
+    }
+    #mainNav.navbar-shrink .nav-link.active {
+        color: #999999 !important;
+}
+    #mainNav.navbar-shrink .nav-item a {
+    color: #122947 !important;
+    margin-left: -12%;
+}
+    #mainNav.navbar-shrink .nav-link:hover {
+           color: #999 !important;
+} 
+    #hero {
+    padding-top: 20%;
+    margin-top: 0%;
+}
+    .ml7 {
+    font-size: 40px;
+}
+.ml8 {
+    font-size: 40px;
+    margin-top: -1%;
+    margin-bottom: 2%;
+}
+.hero-intro p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 4%;
+}
+.hero-intro p br {
+    display: none;
+}
+.hero-intro p span {
+    display: block;
+}
+.hero-intro a {
+    padding: 10px 40px;
+    font-size: 17px;
+    margin-bottom: 5%;
+    margin-left: -2%;
+}
+    .hero-intro img {
+        display: none;
+    }
+#join {
+    margin-top: 5%;
+}
+.join-intro {
+    margin: 3%;
+}
+.join-intro h3 {
+    font-size: 9vh;
+    letter-spacing: 2px;
+    margin-left: 30%;
+}
+.join-intro #lax-move {
+    margin-left: 22%;
+}
+.join-intro #lax-none {
+    margin-bottom: 40%;
+}
+.join-intro p {
+    background: #fcf1ee;
+    color: #231F20;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+.join-intro #right {
+    position: absolute;
+    top: 0%;
+    left: 55%;
+    padding: 2%;
+}
+.join-intro #first-image {
+    margin-bottom: 0%;
+}
+.join-intro #left {
+    position: absolute;
+    top: 0%;
+    left: 80%;
+    padding: 2%;
+}
+.join-intro #first-modal {
+    width: 70%;
+    margin-left: 5%;
+    margin-bottom: 40%;
+}
+.join-intro #second-modal {
+    width: 60%;
+    margin-left: 40%;
+}
+.join-intro .modal button {
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+    /*#product {
+    margin-top: 10%;
+}
+.product-intro {
+    margin: 0%;
+    margin-left: -12%;
+}
+.product-intro h2 {
+    font-size: 25px;
+    margin-bottom: 3%;
+}
+.product-intro p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 15%;
+}
+.product-intro #one {
+    width: 30%;
+    float: left;
+}
+.product-intro #first h6 {
+    transform: rotate(0deg);
+    top: 30%;
+    left: 28%;
+    font-size: 25px;
+}
+.product-intro #two {
+    width: 30%;
+    margin-top: 10%;
+    float: right;
+    margin-bottom: 15%;
+}
+.product-intro #second h6 {
+    transform: rotate(0deg);
+    top: 35%;
+    left: 40%;
+    letter-spacing: 3px;
+    font-size: 25px;
+    color: transparent;
+    -webkit-text-stroke: 1px #7c8082;
+    font-family: 'Playfair Display', serif;
+}
+.product-intro #three {
+    width: 50%;
+    float: left;
+    margin-bottom: 30%;
+}
+.product-intro #third h6 {
+    transform: rotate(0deg);
+    top: 30%;
+    right: 15%;
+    letter-spacing: 3px;
+    font-size: 25px;
+    color: transparent;
+    -webkit-text-stroke: 1px #7c8082;
+    font-family: 'Playfair Display', serif;
+}*/
+#about {
+    margin-top: -60%;
+}
+#about span {
+    display: block;
+}
+.about-intro h5 {
+    font-size: 30px;
+    margin-top: -8%;
+    line-height: 40px;
+    font-weight: 100;
+    margin-bottom: 5%;
+}
+.about-intro p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 5%;
+}
+.about-intro img {
+    width: 50%;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+.loader marquee {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    overflow-x: hidden;
+    margin-bottom: 3%;
+    padding: 0;
+    color: transparent;
+    font-size: 30px;
+    letter-spacing: 3px;
+    -webkit-text-stroke: 1px #122947;
+    font-family: 'Playfair Display', serif;
+}
+#first-link {
+    font-size: 17px;
+    margin-bottom: 0%;
+}
+ion-icon {
+    font-size: 18px;
+    color: #f95b5b;
+}
+#story {
+    margin-top: 8%;
+}
+#story img {
+    width: 10%;
+}
+#story h6 {
+    font-size: 30px;
+    vertical-align: middle;
+    text-align: center;
+    margin-bottom: 2%;
+}
+#story p {
+    font-size: 16px;
+    vertical-align: middle;
+    text-align: center;
+    margin-bottom: 8%;
+}
+#story span {
+    display: block;
+}
+#story .img-one {
+    margin-top: 5%;
+    margin-left: 3%;
+}
+#story .img-two {
+    display: block;
+}
+#story .img-three {
+    margin-top: 10%;
+    margin-left: 35%;
+}
+#story .img-four {
+    display: none;
+}
+#story .img-five {
+    margin-top: 20%;
+    margin-left: 60%;
+}
+#story .img-six {
+    display: none;
+}
+#story .img-seven {
+    margin-top: 40%;
+    margin-left: 40%;
+}
+#footer {
+    margin-top: 40%;
+}
+.main-footer img {
+  padding-bottom: 5%;
+}
+.main-footer p {
+  font-size: 15px;
+}
+.main-footer h3 {
+  font-size: 17px;
+  font-weight: 300;
+}
+.main-footer #first-footer li a {
+  font-size: 15px;
+  font-weight: 200;
+}
+.main-footer #second-footer li a {
+  font-size: 15px;
+  font-weight: 200;
+}
+.main-footer form {
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-footer form button {
+    font-size: 16px;
+    border-radius: 0%;
+}
+.main-footer ::placeholder {
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+}
+
+/***************************** Medium devices (tablets, 768px and up) ********************************/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .nav-item a {
+    margin-left: -1%;
+}
+    .navbar-brand #logo {
+    width: 180px;
+        margin-top: 2%;
+}
+    .nav-item .icon-cart {
+    margin-left: -1%;
+    width: 30px;
+}
+    .nav-item ion-icon {
+    font-size: 19px;
+    }
+    #mainNav.navbar-shrink .nav-link.active {
+        color: #999999 !important;
+}
+    #mainNav.navbar-shrink .nav-item a {
+    color: #122947 !important;
+}
+    #mainNav.navbar-shrink .nav-link:hover {
+           color: #999 !important;
+}   
+    #hero {
+    padding-top: 25%;
+    margin-top: 0%;
+}
+    .ml7 {
+    font-size: 40px;
+}
+.ml8 {
+    font-size: 40px;
+    margin-top: -1%;
+    margin-bottom: 2%;
+}
+.hero-intro p {
+    font-size: 19px;
+    line-height: 1.6;
+    margin-bottom: 4%;
+}
+.hero-intro p br {
+    display: none;
+}
+.hero-intro p span {
+    display: block;
+}
+.hero-intro a {
+    padding: 10px 40px;
+    font-size: 17px;
+    margin-bottom: 5%;
+    margin-left: -2%;
+}
+    .hero-intro img {
+        float: left;
+        padding-top: 15%;
+    }
+#join {
+    margin-top: 6%;
+}
+.join-intro {
+    margin: 3%;
+}
+.join-intro h3 {
+    font-size: 5vh;
+    letter-spacing: 2px;
+    margin-left: 25%;
+    color: transparent;
+    -webkit-text-stroke: 1px #231F20;
+}
+.join-intro #lax-move {
+    margin-left: 40%;
+}
+.join-intro #lax-none {
+    margin-bottom: 15%;
+}
+.join-intro p {
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+.join-intro #right {
+    position: absolute;
+    top: 0%;
+    left: 72%;
+    padding: 2%;
+}
+.join-intro #first-image {
+    margin-bottom: 0%;
+}
+.join-intro #left {
+    position: absolute;
+    top: 0%;
+    left: 52%;
+    padding: 2%;
+}
+.join-intro #first-modal {
+    margin-left: 10%;
+}
+.join-intro #second-modal {
+    width: 70%;
+    margin-left: 18%;
+}
+.join-intro .modal-title {
+    font-size: 22px;
+}
+.join-intro .modal button {
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+    /*#product {
+    margin-top: 10%;
+}
+.product-intro h2 {
+    font-size: 25px;
+    margin-bottom: 3%;
+}
+.product-intro p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 15%;
+}
+.product-intro #one {
+    width: 40%;
+    float: left;
+}
+.product-intro #first h6 {
+    transform: rotate(0deg);
+    top: 10%;
+    left: 33%;
+    font-size: 25px;
+}
+.product-intro #two {
+    width: 40%;
+    margin-top: 90%;
+    float: right;
+    margin-bottom: 15%;
+}
+.product-intro #second h6 {
+    transform: rotate(0deg);
+    top: 70%;
+    left: 15%;
+    letter-spacing: 3px;
+    font-size: 25px;
+    color: transparent;
+    -webkit-text-stroke: 1px #7c8082;
+    font-family: 'Playfair Display', serif;
+}
+.product-intro #three {
+    width: 75%;
+    float: left;
+    margin-bottom: 30%;
+}
+.product-intro #third h6 {
+    transform: rotate(0deg);
+    top: 30%;
+    right: -25%;
+    letter-spacing: 3px;
+    font-size: 25px;
+    color: transparent;
+    -webkit-text-stroke: 1px #7c8082;
+    font-family: 'Playfair Display', serif;
+}*/
+#about {
+    margin-top: -5%;
+}
+#about span {
+    display: block;
+}
+.about-intro h5 {
+    font-size: 35px;
+    margin-top: -8%;
+    line-height: 40px;
+    font-weight: 100;
+    margin-bottom: 5%;
+}
+.about-intro p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 5%;
+}
+.about-intro img {
+    width: 90%;
+    float: right;
+    margin-top: 80%;
+}
+#first-link {
+    font-size: 18px;
+    margin-bottom: 0%;
+}
+ion-icon {
+    font-size: 18px;
+    color: #f95b5b;
+}
+#story {
+    margin-top: 10%;
+    height: 68vh;
+}
+#story img {
+    width: 10%;
+}
+#story span {
+    display: block;
+}
+#story .img-one {
+    margin-top: 5%;
+    margin-left: 3%;
+}
+#story .img-two {
+    display: none;
+}
+#story .img-three {
+    margin-top: 10%;
+    margin-left: 35%;
+}
+#story .img-four {
+    display: none;
+}
+#story .img-five {
+    margin-top: 20%;
+    margin-left: 60%;
+}
+#story .img-six {
+    display: none;
+}
+#story .img-seven {
+    margin-top: 40%;
+    margin-left: 40%;
+}
+#footer {
+    margin-top: -15%;
+}
+.main-footer img {
+  padding-bottom: 5%;
+}
+.main-footer p {
+  font-size: 15px;
+}
+.main-footer h3 {
+  font-size: 17px;
+  font-weight: 300;
+}
+.main-footer #first-footer li a {
+  font-size: 18px;
+  font-weight: 200;
+}
+.main-footer #second-footer li a {
+  font-size: 18px;
+  font-weight: 200;
+}
+.main-footer form {
+    padding-bottom: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-footer form button {
+    font-size: 17px;
+    border-radius: 0%;
+}
+.main-footer ::placeholder {
+    font-size: 16px;
+    letter-spacing: 1px;
+} 
+}
+
+/********************************** Large devices (desktops, 992px and up) *********************************/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .nav-item a {
+    padding: 7px 25px !important;
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+    .navbar-brand #logo {
+    width: 190px;
+    margin-top: 2%;
+}
+    .nav-item .icon-cart {
+    width: 28px;
+}
+    .nav-item ion-icon {
+        font-size: 19px;
+    }
+    #mainNav {
+    background-color: transparent;
+}
+    #mainNav.navbar-shrink .nav-link.active {
+        color: #999999 !important;
+}
+    #mainNav.navbar-shrink .nav-item a {
+    color: #122947 !important;
+}
+    #mainNav.navbar-shrink .nav-link:hover {
+           color: #999 !important;
+} 
+    
+    #hero {
+    padding-top: 15%;
+    margin-top: 0%;
+}
+    .ml7 {
+    font-size: 60px;
+}
+.ml8 {
+    font-size: 60px;
+    margin-top: -1%;
+    margin-bottom: 2%;
+}
+.hero-intro p {
+    font-size: 19px;
+    line-height: 1.6;
+    margin-bottom: 4%;
+}
+.hero-intro p br {
+    display: none;
+}
+.hero-intro p span {
+    display: block;
+}
+.hero-intro a {
+    padding: 10px 40px;
+    font-size: 19px;
+    margin-bottom: 5%;
+    margin-left: -2%;
+}
+    .hero-intro img {
+        float: left;
+        padding-top: 15%;
+    }
+#join {
+    margin-top: 6%;
+}
+.join-intro {
+    margin: 3%;
+}
+.join-intro h3 {
+    font-size: 5vh;
+    letter-spacing: 2px;
+    margin-left: 25%;
+    color: transparent;
+    -webkit-text-stroke: 1px #231F20;
+}
+.join-intro #lax-move {
+    margin-left: 40%;
+}
+.join-intro #lax-none {
+    margin-bottom: 15%;
+}
+.join-intro p {
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+.join-intro #right {
+    position: absolute;
+    top: 0%;
+    left: 80%;
+    padding: 2%;
+}
+.join-intro #first-image {
+    margin-bottom: 0%;
+}
+.join-intro #left {
+    position: absolute;
+    top: 0%;
+    left: 60%;
+    padding: 2%;
+}
+.join-intro #first-modal {
+    margin-left: 10%;
+}
+.join-intro #second-modal {
+    width: 70%;
+    margin-left: 18%;
+}
+.join-intro .modal-title {
+    font-size: 25px;
+}
+.join-intro .modal button {
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+    /*#product {
+    margin-top: 10%;
+}
+.product-intro h2 {
+    font-size: 30px;
+    margin-bottom: 3%;
+}
+.product-intro p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15%;
+}
+.product-intro #one {
+    width: 50%;
+    float: left;
+}
+.product-intro #first h6 {
+    transform: rotate(0deg);
+    top: 20%;
+    left: 40%;
+    font-size: 25px;
+}
+.product-intro #two {
+    width: 50%;
+    margin-top: 90%;
+    float: right;
+    margin-bottom: 15%;
+}
+.product-intro #second h6 {
+    transform: rotate(0deg);
+    top: 70%;
+    left: 20%;
+    letter-spacing: 3px;
+    font-size: 25px;
+    color: transparent;
+    -webkit-text-stroke: 1px #7c8082;
+    font-family: 'Playfair Display', serif;
+}
+.product-intro #three {
+    width: 75%;
+    float: left;
+    margin-bottom: 30%;
+}
+.product-intro #third h6 {
+    transform: rotate(0deg);
+    top: 30%;
+    right: -10%;
+    letter-spacing: 3px;
+    font-size: 25px;
+    color: transparent;
+    -webkit-text-stroke: 1px #7c8082;
+    font-family: 'Playfair Display', serif;
+}*/
+#about {
+    margin-top: -5%;
+}
+#about span {
+    display: block;
+}
+.about-intro h5 {
+    font-size: 40px;
+    margin-top: -8%;
+    line-height: 40px;
+    font-weight: 100;
+    margin-bottom: 5%;
+}
+.about-intro p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 5%;
+}
+.about-intro img {
+    width: 70%;
+    float: right;
+    margin-top: 50%;
+}
+#first-link {
+    font-size: 19px;
+    margin-bottom: 0%;
+}
+ion-icon {
+    font-size: 18px;
+    color: #f95b5b;
+}
+#story {
+    margin-top: 10%;
+    height: 72vh;
+}
+#story img {
+    width: 10%;
+    object-fit: contain;
+    object-fit: cover;
+}
+#story h6 {
+    font-size: 40px;
+    vertical-align: middle;
+    text-align: center;
+    margin-bottom: 2%;
+}
+#story p {
+    font-size: 16px;
+    vertical-align: middle;
+    text-align: center;
+    margin-bottom: 0%;
+}
+#story span {
+    display: block;
+}
+#story .img-one {
+    margin-top: 5%;
+    margin-left: 3%;
+}
+#story .img-two {
+    margin-top: 30%;
+    margin-left: 10%;
+}
+#story .img-three {
+    margin-top: 10%;
+    margin-left: 35%;
+}
+#story .img-four {
+    display: none;
+}
+#story .img-five {
+    margin-top: 20%;
+    margin-left: 60%;
+}
+#story .img-six {
+    display: none;
+}
+#story .img-seven {
+    margin-top: 40%;
+    margin-left: 40%;
+}
+#footer {
+    margin-top: -25%;
+}
+.main-footer img {
+  padding-bottom: 5%;
+}
+.main-footer p {
+  font-size: 15px;
+}
+.main-footer h3 {
+  font-size: 20px;
+  font-weight: 300;
+}
+.main-footer #first-footer li a {
+  font-size: 18px;
+  font-weight: 200;
+}
+.main-footer #second-footer li a {
+  font-size: 18px;
+  font-weight: 200;
+}
+.main-footer form {
+    padding-bottom: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-footer form button {
+    font-size: 17px;
+    border-radius: 0%;
+}
+.main-footer ::placeholder {
+    font-size: 15px;
+    letter-spacing: 1px;
+} 
+}
+
+/************************ Extra large devices (large desktops, 1200px and up) ********************************/
+@media (min-width: 1200px) {
+    .nav-item a {
+    padding: 7px 25px !important;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+    .navbar-brand #logo {
+    width: 180px;
+        margin-top: 2%;
+}
+    .nav-item .icon-cart {
+    width: 30px !important;
+}
+    .nav-item ion-icon {
+        font-size: 20px;
+    }
+    #mainNav {
+    background-color: transparent;
+}
+    #mainNav.navbar-shrink .nav-link.active {
+        color: #999999 !important;
+}
+    #mainNav.navbar-shrink .nav-item a {
+    color: #122947 !important;
+}
+    #mainNav.navbar-shrink .nav-link:hover {
+           color: #999 !important;
+} 
+    #hero {
+    padding-top: 15%;
+    margin-top: 0%;
+}
+.hero-intro {
+    margin: 3%;
+}
+    .ml7 {
+    font-size: 70px;
+}
+.ml8 {
+    font-size: 70px;
+    margin-top: -1%;
+    margin-bottom: 2%;
+}
+.hero-intro p {
+    font-size: 23px;
+    line-height: 1.6;
+    margin-bottom: 3%;
+}
+.hero-intro a {
+    padding: 10px 40px;
+    font-size: 22px;
+    margin-bottom: 10%;
+}
+    .hero-intro img {
+        float: right;
+        padding-top: 5%;
+    }
+#join {
+    margin-top: 6%;
+}
+.join-intro h3 {
+    font-size: 11vh;
+    letter-spacing: 2px;
+    margin-left: 25%;
+    color: transparent;
+    -webkit-text-stroke: 1px #231F20;
+}
+.join-intro #lax-move {
+    margin-left: 40%;
+}
+#wholesale {
+    margin-top: 8%;
+    padding-bottom: 10%;
+}
+#txt-col {
+    padding: 2%;
+}
+#txt-col h2 {
+    font-size: 35px;
+    margin-top: 8%;
+}
+#txt-col #line-first {
+    width: 10%;
+    height: 1px;
+    margin-top: -1%;
+}
+#txt-col p {
+    font-size: 20px;
+    margin-top: 5%;
+    margin-bottom: 15%;
+}
+#txt-col a {
+    font-size: 20px;
+    border-radius: 0%;
+    margin-bottom: 0%;
+}
+#wholesale .modal-title {
+    font-size: 22px;
+}
+#wholesale .modal button {
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+#wholesale-info a {
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 10px 30px;
+    letter-spacing: 2px;
+    font-family: 'Open Sans Condensed';
+    font-size: 19px;
+    background: #C9B793;
+    color: #fff;
+    border-radius: 2%;
+    margin-top: -8%;
+    transition: transform 0.9s;
+}
+    #dit-img-two {
+        height: 62vh !important;
+    }
+    /*#product {
+    margin-top: 10%;
+}
+.product-intro h2 {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 3%;
+}
+.product-intro p {
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 15%;
+}
+.product-intro p span {
+    display: block;
+}
+.product-intro #one {
+    width: 60%;
+    float: left;
+}
+.product-intro #first h6 {
+    transform: rotate(0deg);
+    top: 20%;
+    left: 50%;
+    font-size: 32px;
+}
+.product-intro #two {
+    width: 60%;
+    margin-top: 90%;
+    float: right;
+    margin-bottom: 15%;
+}
+.product-intro #second h6 {
+    transform: rotate(0deg);
+    top: 70%;
+    left: 15%;
+    letter-spacing: 3px;
+    font-size: 32px;
+    color: transparent;
+    -webkit-text-stroke: 1px #7c8082;
+    font-family: 'Playfair Display', serif;
+}
+.product-intro #three {
+    width: 90%;
+    float: left;
+    margin-bottom: 30%;
+}
+.product-intro #third h6 {
+    transform: rotate(0deg);
+    top: 30%;
+    right: -25%;
+    letter-spacing: 3px;
+    font-size: 32px;
+    color: transparent;
+    -webkit-text-stroke: 1px #7c8082;
+    font-family: 'Playfair Display', serif;
+}*/
+#about {
+    margin-top: 10%;
+}
+.about-intro {
+    margin: 2%;
+}
+#about span {
+    display: block;
+}
+.about-intro h5 {
+    font-size: 55px;
+    margin-top: -8%;
+    line-height: 50px;
+    font-weight: 100;
+    margin-bottom: 5%;
+}
+.about-intro p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 5%;
+}
+.about-intro img {
+    width: 70%;
+    float: right;
+    margin-top: 25%;
+}
+#first-link {
+    font-size: 20px;
+    margin-bottom: 0%;
+}
+ion-icon {
+    font-size: 20px;
+    color: #f95b5b;
+}
+#story {
+    margin-top: 5%;
+    height: 70vh;
+}
+#story span {
+    display: block;
+}
+#story .img-one {
+    margin-top: 5%;
+    margin-left: 3%;
+}
+#story .img-two {
+    margin-top: 30%;
+    margin-left: 10%;
+}
+#story .img-three {
+    margin-top: 10%;
+    margin-left: 35%;
+}
+#story .img-four {
+    margin-left: 80%;
+    margin-top: 5%;
+}
+#story .img-five {
+    margin-top: 20%;
+    margin-left: 60%;
+}
+#story .img-six {
+    margin-left: 70%;
+    margin-top: 40%;
+}
+#story .img-seven {
+    margin-top: 40%;
+    margin-left: 40%;
+}
+#footer {
+    margin-top: 20%;
+}
+.main-footer img {
+  padding-bottom: 5%;
+}
+.main-footer p {
+  font-size: 16px;
+}
+.main-footer h3 {
+  font-size: 20px;
+  font-weight: 300;
+}
+.main-footer #first-footer li a {
+  font-size: 16px;
+  font-weight: 200;
+}
+.main-footer #second-footer li a {
+  font-size: 16px;
+  font-weight: 200;
+}
+.main-footer form {
+    padding-bottom: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-footer form button {
+    font-size: 16px;
+    border-radius: 0%;
+}
+.main-footer ::placeholder {
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+}

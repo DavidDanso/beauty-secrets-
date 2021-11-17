@@ -1,0 +1,1565 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+    box-sizing: border-box;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    background: #fcf1ee;
+}
+a:hover {
+    text-decoration: none;
+}
+/******************************************************* NAVIGATION *************************************************/
+#mainNav {
+    background-color: #F6D0CB;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+.navbar-brand #logo {
+    width: 150px;
+}
+.navbar-toggler {
+  position: absolute;
+  width: 40px;
+  top: 27px;
+  right: 30px;
+  padding: 1px;
+    border: 0;
+  z-index: 1;
+}
+.navbar-toggler span {
+  display: block;
+  background: #231F20;
+  width: 30px;
+  height: 1px;
+  transition: 300ms linear all;
+}
+.navbar-toggler span:nth-child(1),
+.navbar-toggler span:nth-child(3) {
+  width: 15px;
+}
+.navbar-toggler span:nth-child(2) {
+  width: 37px;
+  margin: 5px 0;
+}
+.navbar-toggler span:nth-child(3) {
+    float: right;
+}
+.navbar-toggler:hover span:nth-child(1),
+.navbar-toggler:hover span:nth-child(3) {
+  width: 35px;
+}
+.navbar-brand {
+    margin-left: 0%;
+}
+.nav-link.active,
+.nav-link:hover {
+ color: #345e68 !important;
+}
+.nav-item a {
+    padding: 7px 25px !important;
+    font-size: 16px;
+    color: #999;
+    letter-spacing: 3px;
+    font-family: 'Open Sans Condensed';
+    text-transform: uppercase;
+}
+.nav-item a span {
+    color: #231F20;
+}
+.navbar-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-item .icon-cart {
+    width: 10%;
+    color: #999;
+}
+.nav-item #cart:hover {
+    color: #231F20 !important;
+}
+.nav-item ion-icon {
+    font-size: 20px;
+    color: #999;
+}
+.nav-item ion-icon:hover {
+    color: #231F20;
+}
+/*********************************************** Hero-Page **************************************/
+#hero {
+    padding-top: 40%;
+    background-color: #F6D0CB;
+}
+.hero-intro h1 {
+    text-align: center;
+    font-family: 'Playfair Display';
+    color: #303030;
+    font-size: 25px;
+    letter-spacing: 2px;
+    padding-bottom: 38%;
+}
+.rotatethis {
+    color: #303030;
+    font-family: 'Open Sans Condensed';
+    text-transform: uppercase;
+}
+#rotated {
+    margin-top: -18%;
+    font-size: 15px;
+    letter-spacing: 3px;
+    transform: translate(-50%, -50%);
+    animation: rotating 20s linear infinite;
+}
+@keyframes rotating {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+/********************************************* Mobile-Cart ************************************************/
+#shopping-mobile {
+    margin-top: 20%;
+}
+.cart-mobile {
+    margin: 4%;
+}
+#product-info {
+    margin-bottom: 25%;
+}
+.cart-mobile small {
+    color: #7d7b78;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+    font-size: 15px !important;
+    line-height: 1.4;
+}
+#img-szn {
+    margin-left: -8%;
+}
+.cart-mobile .qty-txt {
+    color: #7d7b78;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-top: 5%;
+}
+.cart-mobile input {
+    border: 1px solid #7d7b78;
+    background: #fcf1ee;
+    border-radius: 0%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-bottom: 10%;
+}
+.cart-mobile h6 {
+    color: #7d7b78;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+    font-size: 16px;
+    line-height: 1.4;
+}
+.cart-mobile h5 {
+    color: #252222;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+    font-size: 15px;
+    line-height: 1.4;
+    border: 1px solid #7d7b78;
+    margin-top: 4%;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.cart-mobile #close {
+    vertical-align: middle;
+    cursor: pointer;
+}
+.cart-mobile #close-icon {
+    width: 15%;
+    margin-left: 80%;
+    margin-top: 10%;
+}
+#shopping-mobile #delivery {
+    background: #fff;
+    padding: 5%;
+    margin-left: 2%;
+    margin-top: 2%;
+    border-bottom: 1px solid #333;
+}   
+#delivery h3 {
+    color: #252222;
+    font-size: 5vh;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+    text-align: center;
+    padding-top: 6%;
+}    
+#delivery h6 {
+    color: #7d7b78;
+    line-height: 1.4;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+    text-align: center;
+} 
+#locPrice {
+    margin-top: 5%;
+    margin-bottom: 6%;
+}
+#delivery ion-icon {
+    color: red;
+    vertical-align: middle !important;
+}
+select {
+    color: #252222;
+    font-size: 15px !important;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+    border: 1px solid #7d7b78 !important;
+    background: #fcf1ee !important;
+    margin-bottom: 3%;
+    margin-left: -1%;
+}
+#addt {
+    color: #7d7b78;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+    font-size: 15px !important;
+    line-height: 1.4;
+    margin-left: 2px;
+    vertical-align: middle !important;
+    padding-bottom: 6%;
+}
+#Tprice {
+    background: #fff;
+    padding: 10%;
+}   
+#Tprice h5 {
+    color: #252222;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+    margin-bottom: 7%;
+} 
+#Tprice h5 small {
+    float: right;
+    color: #7d7b78;
+} 
+#Tprice .color-bg {
+    background: #fcf1ee;
+    padding: 3%;
+    margin-bottom: 0%;
+} 
+.float-links {
+    margin-left: 5%;
+    margin-top: 2%;
+}
+#shopping-mobile #checkout {
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 10px 30px;
+    letter-spacing: 2px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    background: #fff;
+    color: #252222;
+    border-radius: 0%;
+    transition: background 0.5s ease-in-out;
+    text-transform: uppercase;
+    margin-top: 5%;
+    margin-left: 2%;
+    box-shadow: 0 10px 10px -10px rgba(0,0,0,0.35);
+}
+#shopping-mobile #checkout:hover {
+    color: #fff;
+    background: #C9B793;
+    border: 1px solid transparent;
+    transition: background 0.5s ease-in-out;
+    box-shadow: 0 10px 10px -10px rgba(0,0,0,0.35);
+}
+#shopping-mobile #previous {
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    background: transparent;
+    color: #C9B793;
+    border-radius: 0%;
+    transition: color 0.5s ease-in-out;
+    margin-top: 5%;
+    padding-left: -30%;
+    text-transform: uppercase;
+}
+#shopping-mobile #previous:hover {
+    color: #252222;
+    transition: color 0.5s ease-in-out;
+}
+.cart-mobile small {
+    font-size: 15px;
+    color: #7d7b78;
+}
+.cart-mobile h2 {
+    margin-top: 2%;
+    color: #252222;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+    font-size: 30px;
+    line-height: 1.4;
+}
+/********************************************* Msg-Page ************************************************/
+#msg {
+    margin-top: 20%;
+    padding-top: 15%;
+    background: url("../../Images/footer-img.jpeg") no-repeat 50% 50%;
+    background-position: center center;
+    background-size: cover;
+}
+#msg h2 {
+    text-align: center;
+    font-family: 'Playfair Display';
+    color: #fff;
+    font-size: 35px;
+    letter-spacing: 1px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+#msg p {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    color: #fff;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    padding-bottom: 15%;
+}
+/*************************************************** Sub-Footer ************************************************/
+#sub {
+    background: #333;
+    margin-top: -4%;
+    padding-top: 10%;
+}
+#sub form {
+    padding-bottom: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sub form button {
+    background: #C9B793;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    border-radius: 0%;
+}
+#sub h3 {
+    text-align: center;
+    font-family: 'Playfair Display';
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 1px;
+    padding-bottom: 4%;
+}
+#sub p {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    color: #979797;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    padding-bottom: 5%;
+}
+#sub ::placeholder {
+    color: #8897A0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+#sub input {
+    border: transparent;
+    border-radius: 0%;
+}
+/******************************************************* Footer *************************************************************/
+footer p {
+    margin-top: 5%;
+    margin-bottom: 8%;
+    text-align: center;
+    color: #231F20;
+    font-size: 17px;
+    font-family: 'Open Sans Condensed';
+}
+footer .footer-intro {
+    margin-top: 10%;
+    margin-bottom: 8%;
+}
+footer li {
+    display: inline-block;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-family: 'Open Sans Condensed';
+    list-style: none;
+}
+footer .faceB {
+    margin-left: -40%;
+    color: #023670;
+}
+footer .insta {
+    padding-left: 30%;
+    color: #cf95a6;
+}
+footer #second {
+    background: transparent;
+    display: block;
+    display: inline-block;
+    cursor: pointer;
+}
+footer #second::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #023670;
+    transition: width .3s;
+}
+footer #second:hover::after {
+    width: 100%;
+    transition: width .3s;
+    border: 1px solid transparent;
+}
+footer #third {
+    background: transparent;
+    display: block;
+    display: inline-block;
+    cursor: pointer;
+}
+footer #third::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #cf95a6;
+    transition: width .3s;
+}
+footer #third:hover::after {
+    width: 100%;
+    transition: width .3s;
+    border: 1px solid transparent;
+}
+/*************************************************** Media-Query ***************************************/
+@media(min-width: 300px) {
+    #mainNav.navbar-shrink {
+        padding-top: 3px;
+        padding-bottom: 3px;
+        background-color: #fff;
+    }
+    #mainNav.navbar-color {
+        padding-top: 3px;
+        padding-bottom: 3px;
+        background-color: #fcf1ee;
+    }
+}
+
+/********************** Extra small devices (portrait phones, less than 576px) ****************************/
+@media (max-width: 575.98px) { 
+    .nav-item a {
+    margin-left: -4%;
+}
+    .icon-cart {
+    margin-left: -1%;
+}
+    #mainNav.navbar-shrink .navbar-toggler {
+      top: 25px;
+}
+    #mainNav.navbar-shrink .navbar-toggler span {
+      background: #122947;
+}
+    #mainNav.navbar-shrink .nav-link.active {
+        color: #999 !important;
+}
+    #mainNav.navbar-shrink .nav-item a {
+    color: #979797 !important;
+}
+    #mainNav.navbar-shrink .nav-link:hover {
+           color: #999999 !important;
+} 
+    #mainNav.navbar-shrink i {
+    padding-bottom: 4%;
+ }
+   #shopping-desktop {
+    display: none;
+}
+    #msg {
+        padding-bottom: 10%;
+    }
+    #msg h2 {
+    padding-bottom: 0%;
+}
+    #msg p {
+    padding: 5%;
+}
+}
+
+/************************ Small devices (landscape phones, 576px and up) *****************************/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .nav-item a {
+    margin-left: -1%;
+}
+    .navbar-brand #logo {
+        margin-top: 2%;
+}
+    .nav-item .icon-cart {
+    margin-left: -1%;
+    width: 30px;
+}
+    .nav-item ion-icon {
+    font-size: 19px;
+    }
+    #mainNav.navbar-shrink .nav-link.active {
+        color: #999999 !important;
+}
+    #mainNav.navbar-shrink .nav-item a {
+    color: #122947 !important;
+    margin-left: -12%;
+}
+    #mainNav.navbar-shrink .nav-link:hover {
+           color: #999 !important;
+} 
+#hero {
+    padding-top: 22%;
+}
+.hero-intro h1 {
+    font-size: 25px;
+    letter-spacing: 2px;
+    padding-bottom: 18%;
+}
+#rotated {
+    margin-top: -10%;
+    font-size: 16px;
+    letter-spacing: 3px;
+    transform: translate(-50%, -50%);
+    animation: rotating 20s linear infinite;
+}
+#shopping-desktop {
+    display: none;
+}
+#shopping-mobile {
+    margin-top: 10%;
+}
+.cart-mobile {
+    margin: 4%;
+}
+#product-info {
+    margin-bottom: 20%;
+}
+.cart-mobile #img-txt {
+    font-size: 15px !important;
+    line-height: 1.4;
+    margin-left: -30%;
+}
+.cart-mobile #img-txt span {
+    display: block;
+}
+#img-szn {
+    margin-left: -8%;
+    width: 60%;
+}
+.cart-mobile .qty-txt {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-top: 2%;
+}
+.cart-mobile input {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-bottom: 5%;
+}
+.cart-mobile h6 {
+    font-size: 16px;
+    line-height: 1.4;
+}
+.cart-mobile h5 {
+    font-size: 15px;
+    margin-top: 4%;
+    text-align: left;
+    padding-left: 4%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.cart-mobile #close-icon {
+    width: 8%;
+    margin-left: 80%;
+    margin-top: 10%;
+}
+#shopping-mobile #delivery {
+    padding: 5%;
+    margin-left: 2%;
+    margin-top: -5%;
+    border-bottom: 1px solid #333;
+}   
+#delivery h3 {
+    font-size: 8vh;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+    text-align: center;
+    padding-top: 4%;
+}    
+#delivery h6 {
+    color: #7d7b78;
+    line-height: 1.4;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+    text-align: center;
+}
+#delivery h6 span {
+    display: block;
+}
+#locPrice {
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+#delivery ion-icon {
+    color: red;
+    vertical-align: middle !important;
+}
+select {
+    font-size: 16px !important;
+    margin-bottom: 3%;
+    margin-left: -1%;
+}
+#addt {
+    font-size: 16px !important;
+    padding-bottom: 2%;
+}
+#Tprice {
+    padding: 7%;
+}   
+#Tprice h5 {
+    font-size: 16px;
+    margin-bottom: 4%;
+} 
+.float-links {
+    margin-left: 2%;
+    margin-top: 1%;
+}
+.cart-mobile small {
+    font-size: 15px;
+    color: #7d7b78;
+}
+.cart-mobile h2 {
+    margin-top: 2%;
+    color: #252222;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+    font-size: 35px;
+    line-height: 1.4;
+}
+#msg {
+    margin-top: 10%;
+    padding-top: 5%;
+}
+#msg h2 {
+    font-size: 40px;
+    padding-top: 5%;
+    padding-bottom: 0%;
+}
+#msg p {
+    font-size: 16px;
+    padding-top: 2%;
+    padding-bottom: 10%;
+}
+#sub {
+    padding-top: 5%;
+}
+#sub form {
+    padding-bottom: 10%;
+}
+#sub form button {
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+#sub h3 {
+    font-size: 28px;
+    padding-bottom: 2%;
+}
+#sub p {
+    font-size: 15px;
+    padding-bottom: 5%;
+    color: #979797;
+}
+#sub ::placeholder {
+    font-size: 14px;
+    letter-spacing: 1px;
+ }
+    footer p {
+    margin-bottom: 2%;
+    margin-top: 3%;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+    footer .footer-intro {
+    margin-top: 5%;
+    margin-bottom: 0%;
+}
+    footer li {
+    font-size: 18px;
+    letter-spacing: 2px;
+ }
+    
+}
+
+/***************************** Medium devices (tablets, 768px and up) ********************************/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .nav-item a {
+    margin-left: -1%;
+}
+    .navbar-brand #logo {
+    width: 180px;
+        margin-top: 2%;
+}
+    .nav-item .icon-cart {
+    margin-left: -1%;
+    width: 30px;
+}
+    .nav-item ion-icon {
+    font-size: 19px;
+    }
+    #mainNav.navbar-shrink .nav-link.active {
+        color: #999999 !important;
+}
+    #mainNav.navbar-shrink .nav-item a {
+    color: #999 !important;
+}
+    #mainNav.navbar-shrink .nav-link:hover {
+           color: #999 !important;
+} 
+#shopping-mobile {
+    display: none;
+}
+#hero {
+    padding-top: 22%;
+}
+.hero-intro h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    padding-bottom: 12%;
+}
+#rotated {
+    margin-top: -5%;
+    font-size: 18px;
+    letter-spacing: 3px;
+    transform: translate(-50%, -50%);
+    animation: rotating 20s linear infinite;
+}
+#shopping-desktop {
+    margin-top: 10%;
+}
+.cart-info {
+    margin: 5%;
+}
+#product-info {
+    border: 1px solid #7d7b78;
+    margin-bottom: 3%;
+}
+.cart-info #img {
+    border-right: 1px solid #7d7b78;
+    padding-top: 10px;
+}
+.cart-info #img-txt {
+    margin-left: 5%;
+}
+.cart-info h6 {
+    color: #7d7b78;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+    font-size: 15px;
+    line-height: 1.4;
+    border: 1px solid transparent;
+    margin-top: 4%;
+    padding-left: -10%;
+}
+.cart-info h6 br {
+    display: none;
+}
+.cart-info input {
+    border: 1px solid #7d7b78;
+    background: #fcf1ee;
+    border-radius: 0%;
+    padding-top: 13%;
+    padding-bottom: 13%;
+    margin-top: 9%;
+    
+}
+.cart-info .qty-txt-one {
+    display: none;
+}
+#price {
+    margin-left: 2%;
+}
+#price h5 {
+    color: #7d7b78;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+    font-size: 16px;
+    line-height: 1.4;
+    border: 1px solid transparent;
+    text-align: center;
+    vertical-align: middle;
+}
+.cart-info #close {
+    vertical-align: middle;
+    cursor: pointer;
+}
+.cart-info #close-icon {
+    width: 15%;
+    margin-left: 60%;
+    margin-top: 10%;
+}
+#delivery {
+    background: #fff;
+    padding: 3%;
+    margin-left: 3%;
+    margin-top: 2%;
+}   
+#delivery h3 {
+    color: #252222;
+    font-size: 2.5vh;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+    text-align: center;
+    padding-bottom: 10%;
+}    
+#delivery h6 {
+    display: none;
+} 
+#locPrice {
+    margin-top: 5%;
+    padding-bottom: 8%;
+}
+select {
+    color: #252222;
+    font-size: 14px !important;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+    border: 1px solid #7d7b78 !important;
+    background: #fcf1ee !important;
+    margin-bottom: -5%;
+}
+.cart-info ion-icon {
+    color: red;
+    vertical-align: middle !important;
+}
+#Tprice {
+    background: #fff;
+    padding: 4%;
+    margin-left: 3%;
+    margin-top: 2%;
+}   
+#Tprice h5 {
+    color: #252222;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+    margin-bottom: 5%;
+} 
+#Tprice h5 small {
+    float: right;
+} 
+#Tprice .color-bg {
+    background: #fcf1ee;
+    padding: 3%;
+    margin-bottom: 0%;
+} 
+.float-links {
+    margin-left: 68%;
+    margin-top: 2%;
+}
+.cart-info #checkout {
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 10px 30px;
+    letter-spacing: 2px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    background: #fff;
+    color: #252222;
+    border-radius: 0%;
+    margin-bottom: 5%;
+    transition: background 0.5s ease-in-out;
+    text-transform: uppercase;
+    margin-top: 5%;
+    box-shadow: 0 10px 10px -10px rgba(0,0,0,0.35);
+}
+.cart-info #checkout:hover {
+    color: #fff;
+    background: #C9B793;
+    border: 1px solid transparent;
+    transition: background 0.5s ease-in-out;
+    box-shadow: 0 10px 10px -10px rgba(0,0,0,0.35);
+}
+.cart-info #previous {
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    background: transparent;
+    color: #C9B793;
+    border-radius: 0%;
+    margin-bottom: 5%;
+    transition: color 0.5s ease-in-out;
+    margin-top: 5%;
+    margin-left: -5% !important;
+    text-transform: uppercase;
+}
+.cart-info #previous:hover {
+    color: #252222;
+    transition: color 0.5s ease-in-out;
+}
+.cart-info small {
+    font-size: 15px;
+    color: #7d7b78;
+}
+.cart-info h2 {
+    margin-top: -2%;
+    color: #252222;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+    font-size: 28px;
+    line-height: 1.4;
+    margin-left: 38%;
+}
+#msg {
+    margin-top: 10%;
+    padding-top: 5%;
+}
+#msg h2 {
+    font-size: 40px;
+    padding-top: 5%;
+    padding-bottom: 0%;
+}
+#msg p {
+    font-size: 16px;
+    padding-top: 2%;
+    padding-bottom: 10%;
+}
+#sub {
+    padding-top: 5%;
+}
+#sub form {
+    padding-bottom: 10%;
+    float: right;
+}
+#sub form button {
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+#sub h3 {
+    font-size: 28px;
+    padding-bottom: 2%;
+}
+#sub p {
+    font-size: 15px;
+    padding-bottom: 5%;
+    color: #979797;
+}
+#sub ::placeholder {
+    font-size: 14px;
+    letter-spacing: 1px;
+ }
+    footer p {
+    margin-bottom: 2%;
+    margin-top: 3%;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+    footer .footer-intro {
+    margin-top: 5%;
+    margin-bottom: 0%;
+}
+    footer li {
+    font-size: 18px;
+    letter-spacing: 2px;
+ }
+    
+    
+}
+
+/********************************** Large devices (desktops, 992px and up) *********************************/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .nav-item a {
+    padding: 7px 25px !important;
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+    .navbar-brand #logo {
+    width: 190px;
+    margin-top: 2%;
+}
+    .nav-item .icon-cart {
+    width: 28px;
+}
+    .nav-item ion-icon {
+        font-size: 19px;
+    }
+    #mainNav.navbar-shrink .nav-link.active {
+        color: #999999 !important;
+}
+    #mainNav.navbar-shrink .nav-item a {
+    color: #999999 !important;
+}
+    #mainNav.navbar-shrink .nav-link:hover {
+           color: #999 !important;
+}
+#shopping-mobile {
+    display: none;
+}
+#hero {
+    padding-top: 18%;
+}
+.hero-intro h1 {
+    font-size: 40px;
+    letter-spacing: 2px;
+    padding-bottom: 12%;
+}
+#rotated {
+    margin-top: -5%;
+    font-size: 18px;
+    letter-spacing: 3px;
+    transform: translate(-50%, -50%);
+    animation: rotating 20s linear infinite;
+}
+#shopping-desktop {
+    margin-top: 10%;
+}
+.cart-info {
+    margin: 5%;
+}
+#product-info {
+    border: 1px solid #7d7b78;
+    margin-bottom: 3%;
+}
+.cart-info #img {
+    border-right: 1px solid #7d7b78;
+    padding-top: 10px;
+}
+.cart-info #img-txt {
+    margin-left: 5%;
+}
+.cart-info h6 {
+    color: #252222;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+    font-size: 15px;
+    line-height: 1.4;
+    border: 1px solid transparent;
+    margin-top: 4%;
+    padding-left: -10%;
+}
+.cart-info h6 br {
+    display: none;
+}
+.cart-info input {
+    border: 1px solid #7d7b78;
+    background: #fcf1ee;
+    border-radius: 0%;
+    padding-top: 13%;
+    padding-bottom: 13%;
+    margin-top: 9%;
+}
+.cart-info .qty-txt-one {
+    display: none;
+}
+#price {
+    margin-left: 2%;
+}
+#price h5 {
+    color: #252222;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+    font-size: 16px;
+    line-height: 1.4;
+    border: 1px solid transparent;
+    text-align: center;
+    vertical-align: middle;
+}
+.cart-info #close {
+    vertical-align: middle;
+    cursor: pointer;
+}
+.cart-info #close-icon {
+    width: 10%;
+    margin-left: 60%;
+    margin-top: 10%;
+}
+#delivery {
+    background: #fff;
+    padding: 2%;
+    margin-left: 3%;
+    margin-top: 2%;
+}   
+#delivery h3 {
+    color: #252222;
+    font-size: 2.5vh;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+    text-align: center;
+    padding-bottom: 1%;
+}    
+#delivery h6 {
+    color: #7d7b78;
+    font-size: 2vh;
+    line-height: 1.4;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+    text-align: center;
+} 
+#locPrice {
+    margin-top: 5%;
+    padding-bottom: 8%;
+}
+select {
+    color: #252222;
+    font-size: 14px !important;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+    border: 1px solid #7d7b78 !important;
+    background: #fcf1ee !important;
+    margin-bottom: -5%;
+}
+.cart-info ion-icon {
+    color: red;
+    vertical-align: middle !important;
+}
+#Tprice {
+    background: #fff;
+    padding: 4%;
+    margin-left: 2%;
+    margin-top: 2%;
+}   
+#Tprice h5 {
+    color: #252222;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+    margin-bottom: 5%;
+} 
+#Tprice h5 small {
+    float: right;
+} 
+#Tprice .color-bg {
+    background: #fcf1ee;
+    padding: 3%;
+    margin-bottom: 0%;
+} 
+.float-links {
+    margin-left: 78%;
+    margin-top: 2%;
+}
+.cart-info #checkout {
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 10px 30px;
+    letter-spacing: 2px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    background: #fff;
+    color: #252222;
+    border-radius: 0%;
+    margin-bottom: 5%;
+    transition: background 0.5s ease-in-out;
+    text-transform: uppercase;
+    margin-top: 5%;
+    box-shadow: 0 10px 10px -10px rgba(0,0,0,0.35);
+}
+.cart-info #checkout:hover {
+    color: #fff;
+    background: #C9B793;
+    border: 1px solid transparent;
+    transition: background 0.5s ease-in-out;
+    box-shadow: 0 10px 10px -10px rgba(0,0,0,0.35);
+}
+.cart-info #previous {
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    background: transparent;
+    color: #C9B793;
+    border-radius: 0%;
+    margin-bottom: 5%;
+    transition: color 0.5s ease-in-out;
+    margin-top: 5%;
+    margin-left: -5% !important;
+    text-transform: uppercase;
+}
+.cart-info #previous:hover {
+    color: #252222;
+    transition: color 0.5s ease-in-out;
+}
+.cart-info small {
+    font-size: 15px;
+    color: #7d7b78;
+}
+.cart-info h2 {
+    margin-top: -2%;
+    color: #252222;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+    font-size: 30px;
+    line-height: 1.4;
+    margin-left: 50%;
+}
+#msg {
+    margin-top: 10%;
+    padding-top: 5%;
+}
+#msg h2 {
+    font-size: 50px;
+    padding-top: 5%;
+    padding-bottom: 0%;
+}
+#msg p {
+    font-size: 16px;
+    padding-top: 2%;
+    padding-bottom: 10%;
+}
+#sub {
+    padding-top: 5%;
+}
+#sub form {
+    padding-bottom: 10%;
+    float: right;
+}
+#sub form button {
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+#sub h3 {
+    font-size: 30px;
+    padding-bottom: 2%;
+}
+#sub p {
+    font-size: 16px;
+    padding-bottom: 5%;
+}
+#sub ::placeholder {
+    font-size: 14px;
+    letter-spacing: 1px;
+ }
+    footer p {
+    margin-bottom: 2%;
+    margin-top: 3%;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+    footer .footer-intro {
+    margin-top: 5%;
+    margin-bottom: 0%;
+}
+    footer li {
+    font-size: 20px;
+    letter-spacing: 2px;
+ }  
+}
+
+/************************ Extra large devices (large desktops, 1200px and up) ********************************/
+@media (min-width: 1200px) {
+    .nav-item a {
+    padding: 7px 25px !important;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+    .navbar-brand #logo {
+    width: 180px;
+        margin-top: 2%;
+}
+    .nav-item .icon-cart {
+    width: 30px !important;
+}
+    .nav-item ion-icon {
+        font-size: 20px;
+    }
+    #mainNav.navbar-shrink .nav-link.active {
+        color: #999999 !important;
+}
+    #mainNav.navbar-shrink .nav-item a {
+    color: #999 !important;
+}
+    #mainNav.navbar-shrink .nav-link:hover {
+           color: #5e62d1 !important;
+}
+#shopping-mobile {
+    display: none;
+}
+#hero {
+    padding-top: 15%;
+}
+.hero-intro h1 {
+    font-size: 45px;
+    letter-spacing: 2px;
+    padding-bottom: 12%;
+}
+#rotated {
+    margin-top: -5%;
+    font-size: 18px;
+    letter-spacing: 3px;
+    transform: translate(-50%, -50%);
+    animation: rotating 20s linear infinite;
+}
+#shopping-desktop {
+    margin-top: 8%;
+}
+.cart-info {
+    margin: 5%;
+}
+#product-info {
+    border: 1px solid #7d7b78;
+    margin-bottom: 3%;
+}
+.cart-info #img {
+    border-right: 1px solid #7d7b78;
+    padding-top: 10px;
+}
+.cart-info #img-txt {
+    margin-left: 5%;
+}
+.cart-info h6 {
+    color: #7d7b78;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+    font-size: 15px;
+    line-height: 1.4;
+    border: 1px solid transparent;
+    margin-top: 4%;
+    padding-left: -10%;
+}
+.cart-info h6 br {
+    display: none;
+}
+.cart-info input {
+    border: 1px solid #7d7b78;
+    background: #fcf1ee;
+    border-radius: 0%;
+    padding-top: 13%;
+    padding-bottom: 13%;
+    margin-top: 10%;
+}
+#price {
+    margin-left: 2%;
+}
+.qty-txt-one {
+    color: #252222;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+    font-size: 16px;
+    line-height: 1.4;
+    text-align: center;
+    margin-top: -8%;
+}
+#price h5 {
+    color: #7d7b78;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+    font-size: 16px;
+    line-height: 1.4;
+    border: 1px solid #7d7b78;
+    text-align: center;
+    padding: 5%;
+}
+.cart-info #close {
+    vertical-align: middle;
+    cursor: pointer;
+}
+.cart-info #close-icon {
+    width: 10%;
+    margin-left: 60%;
+    margin-top: 10%;
+}
+#delivery {
+    background: #fff;
+    padding: 2%;
+    margin-left: 2%;
+    margin-top: 2%;
+}   
+#delivery h3 {
+    color: #252222;
+    font-size: 5.5vh;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+    text-align: center;
+    padding-bottom: 1%;
+}    
+#delivery h6 {
+    color: #7d7b78;
+    font-size: 2.5vh;
+    line-height: 1.4;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+    text-align: center;
+}    
+#locPrice {
+    margin-top: 5%;
+    padding-bottom: 8%;
+}
+select {
+    color: #252222;
+    font-size: 14px !important;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+    border: 1px solid #7d7b78 !important;
+    background: #fcf1ee !important;
+    margin-bottom: -5%;
+}
+#addt {
+    color: #7d7b78;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+    font-size: 16px !important;
+    line-height: 1.4;
+    margin-left: 2px;
+    vertical-align: middle !important;
+}
+.cart-info ion-icon {
+    color: red;
+    vertical-align: middle !important;
+}
+#Tprice {
+    background: #fff;
+    padding: 5%;
+    margin-left: 4%;
+    margin-top: 2%;
+}   
+#Tprice h5 {
+    color: #252222;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+    margin-bottom: 5%;
+} 
+#Tprice h5 small {
+    float: right;
+} 
+#Tprice .color-bg {
+    background: #fcf1ee;
+    padding: 3%;
+    margin-bottom: 0%;
+} 
+.float-links {
+    margin-left: 68%;
+    margin-top: 2%;
+}
+.cart-info #checkout {
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 10px 30px;
+    letter-spacing: 2px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    background: #fff;
+    color: #252222;
+    border-radius: 0%;
+    margin-bottom: 5%;
+    transition: background 0.5s ease-in-out;
+    text-transform: uppercase;
+    margin-top: 5%;
+    box-shadow: 0 10px 10px -10px rgba(0,0,0,0.35);
+}
+.cart-info #checkout:hover {
+    color: #fff;
+    background: #C9B793;
+    border: 1px solid transparent;
+    transition: background 0.5s ease-in-out;
+    box-shadow: 0 10px 10px -10px rgba(0,0,0,0.35);
+}
+.cart-info #previous {
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    background: transparent;
+    color: #C9B793;
+    border-radius: 0%;
+    margin-bottom: 5%;
+    transition: color 0.5s ease-in-out;
+    margin-top: 5%;
+    margin-left: 3%;
+    text-transform: uppercase;
+}
+.cart-info #previous:hover {
+    color: #252222;
+    transition: color 0.5s ease-in-out;
+}
+.cart-info small {
+    font-size: 15px;
+    color: #7d7b78;
+}
+.cart-info h2 {
+    margin-top: 2%;
+    color: #252222;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+    font-size: 30px;
+    line-height: 1.4;
+    margin-left: 70%;
+}
+#msg {
+    margin-top: 10%;
+    padding-top: 5%;
+}
+#msg h2 {
+    font-size: 60px;
+    padding-top: 5%;
+    padding-bottom: 0%;
+}
+#msg p {
+    font-size: 18px;
+    padding-top: 2%;
+    padding-bottom: 10%;
+}
+#sub {
+    padding-top: 5%;
+}
+#sub form {
+    padding-bottom: 10%;
+    float: right;
+}
+#sub form button {
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+#sub h3 {
+    font-size: 35px;
+    padding-bottom: 2%;
+}
+#sub p {
+    font-size: 17px;
+    padding-bottom: 5%;
+}
+#sub ::placeholder {
+    font-size: 14px;
+    letter-spacing: 1px;
+ }
+    footer p {
+    margin-bottom: 2%;
+    margin-top: 3%;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+    footer .footer-intro {
+    margin-top: 5%;
+    margin-bottom: 0%;
+}
+    footer li {
+    font-size: 18px;
+    letter-spacing: 2px;
+ }
+}

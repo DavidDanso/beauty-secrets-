@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Assets/Images/img.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+   <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    
+    <!-- Ion Icons -->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="Assets/styles/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Assets/styles/css/cart.css">
+    
+
+    <title>basket page | beauty secrets</title>
+  </head>
+  <body id="pageTop" data-spy="scroll" data-target="#homePage">
+  <!--=============================================== Navigation ==========================================================-->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+         <div class="container-fluid">
+             <a class="navbar-brand" href="home.html">
+             <img id="logo" src="Assets/Images/secret.png" class="img-fluid">
+             </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span><span></span>
+              </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+             <li class="nav-item">
+                <a class="nav-link" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="shopNow.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="FAQ.html">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><ion-icon name="search-outline"></ion-icon></a>
+              </li>
+               <li id="cart" class="nav-item">
+                <a class="nav-link" href="cartPage.html"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="presentation" class="icon icon-cart" viewBox="0 0 64 64"><defs><path id="a" d="M0 0h40.779v46.54H0z"/></defs><g fill="none" fill-rule="evenodd" transform="translate(11.5 6)"><mask id="b" fill="#fff"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#a"/></mask><path fill="#333" d="M5.062 44.56h-3.01l1.15-32.71h34.376l1.148 32.71H5.062zM20.597 1.98c4.46 0 8.085 3.5 8.362 7.89H12.234c.278-4.39 3.901-7.89 8.363-7.89zM39.49 9.87h-8.55C30.659 4.386 26.15 0 20.597 0S10.533 4.386 10.254 9.87H1.29L0 46.54h40.78L39.49 9.87z" mask="url(#b)"/></g></svg><span class="text-dark">[3]</span></a>
+              </li>
+            </ul><!-- End navbar-nav -->
+          </div><!-- End collapse -->
+         </div><!-- End container -->
+        </nav><!-- End NavBar -->
+    <!--=============================================== Hero-Page ==========================================================-->
+    <div id="hero">
+        <div class="container-fluid">
+            <div class="hero-intro">
+                <h1>YOUR SHOPPING CART</h1>
+            </div><!-- End hero-intro -->
+        </div><!-- End container-fluid -->
+    </div><!-- End hero -->
+    
+    <div class="rotatethis">
+        <center><h6 id="rotated">beauty • secrets • of • africa • </h6></center>
+    </div> 
+    <!--=============================================== Cart-Info-Mobile =========================================-->
+    <div id="shopping-mobile">
+        <div class="container-fluid">
+            <div class="cart-mobile">
+                <div id="product-info">
+                    <div class="row">
+                       <div class="col" id="img">
+                           <img id="img-szn" src="Assets/Images/cocoa%20butter.jpg" class="img-fluid">
+                       </div> <!-- End img -->
+                
+                       <div class="col align-self-center" id="img-txt">
+                          <small>COCOA BUTTER <span></span> CREAM (100g)</small>
+                       </div><!-- End img-txt -->
+                    </div><!-- End row -->
+                    
+                    <div class="row">
+                        <div class="col-12" id="qty">
+                           <p class="qty-txt">Product Quantity</p>
+                           <form>
+                                <div class="form-group">
+                                    <input type="number" class="form-control" id="exampleFormControlInput1" value="2">
+                                </div><!-- End form-group -->
+                            </form><!-- End form -->
+                        </div><!-- End qty -->
+                    </div><!-- End row -->
+                    
+                    <div class="row">
+                        <div class="col">
+                           <h6>Product Total</h6>
+                            <h5>GHC(20.00)</h5>
+                        </div>
+                        
+                        <div class="col align-self-center" id="close">
+                            <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="none"><path stroke="#7d7b78" stroke-width="1" d="M0 0l12 12zM12 0L0 12z"/></svg>
+                       </div><!-- End close -->
+                    </div><!-- End row -->
+                </div><!-- End product-info -->
+                
+                <div id="product-info">
+                    <div class="row">
+                       <div class="col" id="img">
+                           <img id="img-szn" src="Assets/Images/cocoa-butter-big.png" class="img-fluid">
+                       </div> <!-- End img -->
+                
+                       <div class="col align-self-center" id="img-txt">
+                          <small>COCOA BUTTER <span></span> CREAM (200g)</small>
+                       </div><!-- End img-txt -->
+                    </div><!-- End row -->
+                    
+                    <div class="row">
+                        <div class="col-12" id="qty">
+                           <p class="qty-txt">Product Quantity</p>
+                           <form>
+                                <div class="form-group">
+                                    <input type="number" class="form-control" id="exampleFormControlInput1" value="3">
+                                </div><!-- End form-group -->
+                            </form><!-- End form -->
+                        </div><!-- End qty -->
+                    </div><!-- End row -->
+                    
+                    <div class="row">
+                        <div class="col">
+                           <h6>Product Total</h6>
+                            <h5>GHC(45.00)</h5>
+                        </div>
+                        
+                        <div class="col align-self-center" id="close">
+                            <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="none"><path stroke="#7d7b78" stroke-width="1" d="M0 0l12 12zM12 0L0 12z"/></svg>
+                       </div><!-- End close -->
+                    </div><!-- End row -->
+                </div><!-- End product-info -->
+                
+                <div id="product-info">
+                    <div class="row">
+                       <div class="col" id="img">
+                           <img id="img-szn" src="Assets/Images/moringa.png" class="img-fluid">
+                       </div> <!-- End img -->
+                
+                       <div class="col align-self-center" id="img-txt">
+                          <small>SHEA BUTTER SOAP <span></span> WITH MORINGA (85g)</small>
+                       </div><!-- End img-txt -->
+                    </div><!-- End row -->
+                    
+                    <div class="row">
+                        <div class="col-12" id="qty">
+                           <p class="qty-txt">Product Quantity</p>
+                           <form>
+                                <div class="form-group">
+                                    <input type="number" class="form-control" id="exampleFormControlInput1" value="3">
+                                </div><!-- End form-group -->
+                            </form><!-- End form -->
+                        </div><!-- End qty -->
+                    </div><!-- End row -->
+                    
+                    <div class="row">
+                        <div class="col">
+                           <h6>Product Total</h6>
+                            <h5>GHC(20.00)</h5>
+                        </div>
+                        
+                        <div class="col align-self-center" id="close">
+                            <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="none"><path stroke="#7d7b78" stroke-width="1" d="M0 0l12 12zM12 0L0 12z"/></svg>
+                       </div><!-- End close -->
+                    </div><!-- End row -->
+                </div><!-- End product-info -->
+            </div><!-- End cart-mobile -->
+        </div><!-- End container-fluid -->
+        <div class="row" id="info">
+                    <div class="col-md-4" id="delivery">
+                        <h3>Delivery <br> Overview</h3>
+                        <div id="locPrice">
+                            <form name="form-field">
+                              <select name="list-field" id="inputState" class="form-control">
+                                <option selected>Delivery Location &amp; Price</option>
+                                <option value="GHC(10.00)">Greater Accra Region - GHS(10.00)</option>
+                                <option value="GHC(20.00)">Eastern Region - GHS(30.00)</option>
+                                <option value="GHC(30.00)">Ashanti Region - GHS(40.00)</option>
+                                <option value="GHC(40.00)">Central Region - GHS(40.00)</option>
+                                <option value="GHC(50.00)">Northern Region - GHS(50.00)</option>
+                                <option value="GHC(50.00)">Upper East Region - GHS(50.00)</option>
+                                <option value="GHC(50.00)">Upper West Region - GHS(50.00)</option>
+                                <option value="GHC(50.00)">Oti Region - GHS(50.00)</option>
+                                <option value="GHC(50.00)">Bono East Region - GHS(50.00)</option>
+                                <option value="GHC(50.00)">Ahafo Region - GHS(45.00)</option>
+                                <option value="GHC(35.00)">Bono Region - GHS(45.00)</option>
+                                <option value="GHC(40.00)">North East Region - GHS(50.00)</option>
+                                <option value="GHC(35.00)">Savannah Region - GHS(40.00)</option>
+                                <option value="GHC(40.00)">Western North Region - GHS(50.00)</option>
+                                <option value="GHC(50.00)">Volta Region - GHS(45.00)</option>
+                                <option value="GHC(35.00)">Western Region - GHS(50.00)</option>
+                              </select><!-- End select -->
+                            </form><!-- End form-field -->   
+                        </div><!-- End locPrice -->
+                        <h6 id="addt"><ion-icon size="small" name="alert-circle-outline"></ion-icon> Delivery chargers based on your location <span></span> will be added to Gross Total of products brought</h6>
+                    </div><!-- End delivery -->
+                    
+                    <div class="col-md-7" id="Tprice">
+                        <h5>SUB TOTAL <small>GHC 500.00</small></h5>
+                        <h5>DELIVERY CHARGE <small>GHC 20.00</small></h5>
+                        <h5>VAT <small>GHC 2.00</small></h5>
+                        <h5 class="color-bg">GROSS TOTAL <small>GHC 522.00</small></h5>
+                    </div><!-- End Tprice -->
+                </div><!-- End info -->
+                
+                <div class="float-links">
+                    <a href="#" class="btn btn-lg" target="_blank" id="checkout">Checkout</a>
+                    <a href="#previous" class="btn btn-lg" target="_blank" id="previous">Keep Shopping</a>
+                </div><!-- End float-links -->
+    </div><!-- End shopping-mobile -->
+    
+    
+    <!--=============================================== Cart-Info-Desktop =========================================-->
+    <div id="shopping-desktop">
+        <div class="container-fluid">
+            <div class="cart-info">
+                
+                <div id="product-info">
+                    <div class="row">
+                       <div class="col-md-2" id="img">
+                           <img src="Assets/Images/cocoa%20butter.jpg" class="img-fluid">
+                       </div> <!-- End img -->
+                
+                       <div class="col-md-3 align-self-center" id="img-txt">
+                           <h6>COCOA BUTTER CREAM (100g)</h6>
+                       </div><!-- End img-txt -->
+                       
+                       <div class="col-md-2 align-self-center" id="qty">
+                           <form>
+                                <div class="form-group">
+                                    <input type="number" class="form-control" id="exampleFormControlInput1" value="2">
+                                </div><!-- End form-group -->
+                            </form><!-- End form -->
+                       </div><!-- End qty -->
+                       
+                       <div class="col-md-2 align-self-center" id="price">
+                        <p class="qty-txt-one">Product Total</p>
+                        <h5>GHC(20.00)</h5>
+                       </div><!-- End price -->
+                       
+                       <div class="col-md-2 align-self-center" id="close">
+                            <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="none"><path stroke="#7d7b78" stroke-width="1" d="M0 0l12 12zM12 0L0 12z"/></svg>
+                       </div><!-- End close -->
+                    </div><!-- End row -->
+                </div><!-- End product-info -->
+                
+                <div id="product-info">
+                    <div class="row">
+                       <div class="col-md-2" id="img">
+                           <img src="Assets/Images/cocoa-butter-big.png" class="img-fluid">
+                       </div> <!-- End img -->
+                
+                       <div class="col-md-3 align-self-center" id="img-txt">
+                           <h6>COCOA BUTTER CREAM (200g)</h6>
+                       </div><!-- End img-txt -->
+                       
+                       <div class="col-md-2 align-self-center" id="qty">
+                           <form>
+                                <div class="form-group">
+                                    <input type="number" class="form-control" id="exampleFormControlInput1" value="3">
+                                </div><!-- End form-group -->
+                            </form><!-- End form -->
+                       </div><!-- End qty -->
+                       
+                       <div class="col-md-2 align-self-center" id="price">
+                        <p class="qty-txt-one">Product Total</p>
+                        <h5>GHC(30.00)</h5>
+                       </div><!-- End price -->
+                       
+                       <div class="col-md-2 align-self-center" id="close">
+                            <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="none"><path stroke="#7d7b78" stroke-width="1" d="M0 0l12 12zM12 0L0 12z"/></svg>
+                       </div><!-- End close -->
+                    </div><!-- End row -->
+                </div><!-- End product-info -->
+                
+                
+                <div id="product-info">
+                    <div class="row">
+                       <div class="col-md-2" id="img">
+                           <img src="Assets/Images/moringa.png" class="img-fluid">
+                       </div> <!-- End img -->
+                
+                       <div class="col-md-3 align-self-center" id="img-txt">
+                           <h6>SHEA BUTTER SOAP WITH <br> MORINGA (85g)</h6>
+                       </div><!-- End img-txt -->
+                       
+                       <div class="col-md-2 align-self-center" id="qty">
+                           <form>
+                                <div class="form-group">
+                                    <input type="number" class="form-control" id="exampleFormControlInput1" value="5">
+                                </div><!-- End form-group -->
+                            </form><!-- End form -->
+                       </div><!-- End qty -->
+                       
+                       <div class="col-md-2 align-self-center" id="price">
+                        <p class="qty-txt-one">Product Total</p>
+                        <h5>GHC(40.00)</h5>
+                       </div><!-- End price -->
+                       
+                       <div class="col-md-2 align-self-center" id="close" onclick="delItem(this)">
+                            <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="none"><path stroke="#7d7b78" stroke-width="1" d="M0 0l12 12zM12 0L0 12z"/></svg>
+                       </div><!-- End close -->
+                    </div><!-- End row -->
+                </div><!-- End product-info -->
+                
+                <div class="row" id="info">
+                    <div class="col-md-4" id="delivery">
+                        <h3>Delivery <br> Overview</h3>
+                        <div id="locPrice">
+                            <form name="form-field">
+                              <select name="list-field" id="inputState" class="form-control">
+                                <option selected>Delivery Location &amp; Price</option>
+                                <option value="GHC(10.00)">Greater Accra Region - GHS(10.00)</option>
+                                <option value="GHC(20.00)">Eastern Region - GHS(30.00)</option>
+                                <option value="GHC(30.00)">Ashanti Region - GHS(40.00)</option>
+                                <option value="GHC(40.00)">Central Region - GHS(40.00)</option>
+                                <option value="GHC(50.00)">Northern Region - GHS(50.00)</option>
+                                <option value="GHC(50.00)">Upper East Region - GHS(50.00)</option>
+                                <option value="GHC(50.00)">Upper West Region - GHS(50.00)</option>
+                                <option value="GHC(50.00)">Oti Region - GHS(50.00)</option>
+                                <option value="GHC(50.00)">Bono East Region - GHS(50.00)</option>
+                                <option value="GHC(50.00)">Ahafo Region - GHS(45.00)</option>
+                                <option value="GHC(35.00)">Bono Region - GHS(45.00)</option>
+                                <option value="GHC(40.00)">North East Region - GHS(50.00)</option>
+                                <option value="GHC(35.00)">Savannah Region - GHS(40.00)</option>
+                                <option value="GHC(40.00)">Western North Region - GHS(50.00)</option>
+                                <option value="GHC(50.00)">Volta Region - GHS(45.00)</option>
+                                <option value="GHC(35.00)">Western Region - GHS(50.00)</option>
+                              </select><!-- End select -->
+                            </form><!-- End form-field -->   
+                        </div><!-- End locPrice -->
+                        <h6 id="addt"><ion-icon size="small" name="alert-circle-outline"></ion-icon> Delivery chargers based on your location will be added to Gross Total of products brought</h6>
+                    </div><!-- End delivery -->
+                    
+                    <div class="col-md-7" id="Tprice">
+                        <h5>SUB TOTAL <small>GHC 500.00</small></h5>
+                        <h5>DELIVERY CHARGE <small>GHC 20.00</small></h5>
+                        <h5>VAT <small>GHC 2.00</small></h5>
+                        <h5 class="color-bg">GROSS TOTAL <small>GHC 522.00</small></h5>
+                    </div><!-- End Tprice -->
+                </div><!-- End info -->
+                
+                <div class="float-links">
+                    <a href="#" class="btn btn-lg" target="_blank" id="checkout">Checkout</a>
+                    <a href="#previous" class="btn btn-lg" target="_blank" id="previous">Keep Shopping</a>
+                </div><!-- End float-links -->
+            </div><!-- End cart-info -->
+        </div><!-- End container-fluid -->
+    </div><!-- End shopping-desktop -->
+    
+    
+    
+    
+    
+    <!--=============================================== Msg-Page ==========================================================-->
+    <div id="msg">
+        <h2>
+            EXPERIENCE <br>
+            BEAUTY SECRETS
+        </h2>
+        <p>
+            Unlock that inner beauty with our skincare products.
+        </p>
+    </div><!-- End msg -->
+    <!--=============================================== Sub-Footer ==========================================================-->
+    <div id="sub">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Stay up to date</h3>
+                    <p>
+                        Want to stay in the loop for all our amazing discounts, sales and promotions on skincare products
+                    </p>
+                </div><!-- End col -->
+                
+                <div class="col-md-6 align-self-center">
+                    <form class="form-inline">
+                      <div class="form-group mb-2">
+                        <input type="text" class="form-control" id="inputEmail" placeholder="Your email address">
+                      </div>
+                      <button type="submit" class="btn mb-2">subscribe</button>
+                    </form><!-- End form -->
+                </div><!-- End col -->
+            </div><!-- End row -->
+        </div><!-- End container -->
+    </div><!-- End sub -->
+    <!--=============================================== Footer ==========================================================-->
+    <footer>
+        <div class="container">
+           <div class="footer-intro d-flex justify-content-center">
+               <a href="https://www.facebook.com/beautysecretsghana" target="_blank"><li id="second" class="faceB"><span>Facebook</span></li></a>
+               <a href="https://www.instagram.com/beautysecretsafrica_" target="_blank"><li id="third" class="insta"><span>Instagram</span></li></a>
+           </div><!-- End footer-intro -->
+           <p>All rights reserved. Copyright &copy; 2020</p>
+        </div><!-- End container -->
+    </footer><!-- End footer -->
+   
+   <!--=============================================== JavaScript ==========================================================-->
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+      <script src="Assets/styles/js/jquery-3.2.1.js"></script>
+      <script src="Assets/styles/js/popper.min.js"></script>
+      <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+      <script src="Assets/styles/js/bootstrap.min.js"></script>
+      <!-- Custom Script -->
+      <script src="Assets/styles/js/circleType.js"></script>
+      <script src="Assets/styles/js/cart.js"></script>
+      </body>
+</html>

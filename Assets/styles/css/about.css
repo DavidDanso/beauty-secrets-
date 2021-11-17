@@ -1,0 +1,1095 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+    box-sizing: border-box;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    background: #fff;
+}
+a:hover {
+    text-decoration: none;
+}
+/******************************************************* NAVIGATION *************************************************************/
+#mainNav {
+    background-color: #fcf1ee;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+.navbar-brand #logo {
+    width: 150px;
+}
+.navbar-toggler {
+  position: absolute;
+  width: 40px;
+  top: 27px;
+  right: 30px;
+  padding: 1px;
+    border: 0;
+  z-index: 1;
+}
+.navbar-toggler span {
+  display: block;
+  background: #231F20;
+  width: 30px;
+  height: 1px;
+  transition: 300ms linear all;
+}
+.navbar-toggler span:nth-child(1),
+.navbar-toggler span:nth-child(3) {
+  width: 15px;
+}
+.navbar-toggler span:nth-child(2) {
+  width: 37px;
+  margin: 5px 0;
+}
+.navbar-toggler span:nth-child(3) {
+    float: right;
+}
+.navbar-toggler:hover span:nth-child(1),
+.navbar-toggler:hover span:nth-child(3) {
+  width: 35px;
+}
+.navbar-brand {
+    margin-left: 0%;
+}
+.nav-link.active,
+.nav-link:hover {
+ color: #345e68 !important;
+}
+.nav-item a {
+    padding: 7px 25px !important;
+    font-size: 16px;
+    color: #999;
+    letter-spacing: 3px;
+    font-family: 'Open Sans Condensed';
+    text-transform: uppercase;
+}
+.nav-item a span {
+    color: #231F20;
+}
+.navbar-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-item .icon-cart {
+    width: 10%;
+    color: #999;
+}
+.nav-item #cart:hover {
+    color: #231F20 !important;
+}
+.nav-item ion-icon {
+    font-size: 20px;
+    color: #999;
+}
+.nav-item ion-icon:hover {
+    color: #231F20;
+}
+/*************************************************** Hero-Page ****************************************/
+#hero {
+    padding-top: 35%;
+    background-color: #fcf1ee;
+}
+.hero-intro {
+    margin: 5%;
+}
+.hero-intro h1 {
+    color: transparent;
+    -webkit-text-stroke: 1px #7c8082;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 35px;
+    margin-bottom: 5%;
+    font-family: 'Playfair Display', serif;
+}
+.hero-intro h6 {
+    color: #122947;
+    letter-spacing: 3px;
+    margin-top: 5%;
+    font-size: 17px;
+    font-weight: 200;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 8%;
+}
+.hero-intro h6 span {
+    border-bottom: 1px solid #122947;
+}
+.hero-intro p {
+    color: #122947;
+    letter-spacing: 3px;
+    font-size: 15px;
+    line-height: 1.6;
+    padding-bottom: 40%;
+    font-weight: 200;
+    font-family: 'Nunito', sans-serif;
+}
+/*************************************************** Mission-Page ****************************************/
+#mission img {
+    width: 40%;
+    margin-top: -25%;
+    margin-bottom: 15%;
+}
+.mission-intro {
+    margin: 5%;
+}
+.mission-intro .msg-box {
+    padding: 8%;
+    background: #f8cfa9;
+}
+#rotated-img {
+    animation: rotating 8s linear infinite;
+}
+@keyframes rotating {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(359deg);
+	}
+}
+.mission-intro .msg-box h6 {
+    color: #122947;
+    letter-spacing: 3px;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 8%;
+    font-weight: 200;
+    font-family: 'Nunito', sans-serif;
+}
+.mission-intro .msg-box h6 span {
+    border-bottom: 1px solid #122947;
+}
+.mission-intro .msg-box h2 {
+    color: #122947;
+    letter-spacing: 3px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.3;
+    margin-bottom: 8%;
+    font-family: 'Playfair Display', serif;
+}
+.mission-intro .msg-box p {
+    color: #122947;
+    letter-spacing: 3px;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 20%;
+    font-weight: 200;
+    font-family: 'Nunito', sans-serif;
+}
+/*************************************************** YouTube-Page ****************************************/
+
+/*************************************************** Products-Page ****************************************/
+#products {
+    margin-top: 20%;
+}
+.products-intro {
+    margin: 5%;
+}
+.products-intro .col-md-4 {
+    margin-bottom: 25%;
+}
+.products-intro span {
+    border-bottom: 1px solid #122947;
+}
+.products-intro .img-bg:hover {
+    background: #537087;
+    transition: 0.5s ease-in-out;
+    margin-bottom: 10%;
+}
+.products-intro .img-bg-one:hover {
+    background: #f8cfa9;
+    transition: 0.5s ease-in-out;
+    margin-bottom: 10%;
+}
+.products-intro h3 {
+    color: #122947;
+    letter-spacing: 3px;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 5%;
+    font-family: 'Playfair Display', serif;
+}
+.products-intro h6 {
+    color: #122947;
+    letter-spacing: 3px;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 5%;
+    font-family: 'Playfair Display', serif;
+}
+.products-intro p {
+    color: #122947;
+    letter-spacing: 3px;
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+}
+/******************************************************* Msg-Page *************************************************************/
+#msg {
+    margin-top: 20%;
+    padding-top: 15%;
+    background: url("../../Images/footer-img.jpeg") no-repeat 50% 50%;
+    background-position: center center;
+    background-size: cover;
+}
+#msg h2 {
+    text-align: center;
+    font-family: 'Playfair Display';
+    color: #fff;
+    font-size: 35px;
+    letter-spacing: 1px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+#msg p {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    color: #fff;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    padding-bottom: 15%;
+}
+/******************************************************* Sub-Footer *************************************************************/
+#sub {
+    background: #333;
+    margin-top: -4%;
+    padding-top: 10%;
+}
+#sub form {
+    padding-bottom: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sub form button {
+    background: #C9B793;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    border-radius: 0%;
+}
+#sub h3 {
+    text-align: center;
+    font-family: 'Playfair Display';
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 1px;
+    padding-bottom: 4%;
+}
+#sub p {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    color: #979797;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    padding-bottom: 5%;
+}
+#sub ::placeholder {
+    color: #8897A0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+#sub input {
+    border: transparent;
+    border-radius: 0%;
+}
+/******************************************************* Footer *************************************************************/
+footer p {
+    margin-top: 5%;
+    margin-bottom: 8%;
+    text-align: center;
+    color: #231F20;
+    font-size: 17px;
+    font-family: 'Open Sans Condensed';
+}
+footer .footer-intro {
+    margin-top: 10%;
+    margin-bottom: 8%;
+}
+footer li {
+    display: inline-block;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-family: 'Open Sans Condensed';
+    list-style: none;
+}
+footer .faceB {
+    margin-left: -40%;
+    color: #023670;
+}
+footer .insta {
+    padding-left: 30%;
+    color: #cf95a6;
+}
+footer #second {
+    background: transparent;
+    display: block;
+    display: inline-block;
+    cursor: pointer;
+}
+footer #second::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #023670;
+    transition: width .3s;
+}
+footer #second:hover::after {
+    width: 100%;
+    transition: width .3s;
+    border: 1px solid transparent;
+}
+footer #third {
+    background: transparent;
+    display: block;
+    display: inline-block;
+    cursor: pointer;
+}
+footer #third::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #cf95a6;
+    transition: width .3s;
+}
+footer #third:hover::after {
+    width: 100%;
+    transition: width .3s;
+    border: 1px solid transparent;
+}
+/******************************************* Media-Query ************************************/
+@media(min-width: 300px) {
+    #mainNav.navbar-shrink {
+        padding-top: 3px;
+        padding-bottom: 3px;
+        background-color: #fff;
+    }
+    #mainNav.navbar-color {
+        padding-top: 3px;
+        padding-bottom: 3px;
+        background-color: #fcf1ee;
+    }
+}
+
+/********************** Extra small devices (portrait phones, less than 576px) ****************************/
+@media (max-width: 575.98px) { 
+  
+    .nav-item a {
+    margin-left: -4%;
+}
+    .icon-cart {
+    margin-left: -1%;
+}
+    #mainNav.navbar-shrink .navbar-toggler {
+      top: 25px;
+}
+    #mainNav.navbar-shrink .navbar-toggler span {
+      background: #122947;
+}
+    #mainNav.navbar-shrink .nav-link.active {
+        color: #999 !important;
+}
+    #mainNav.navbar-shrink .nav-item a {
+    color: #979797 !important;
+}
+    #mainNav.navbar-shrink .nav-link:hover {
+           color: #999999 !important;
+} 
+    #mainNav.navbar-shrink i {
+    padding-bottom: 4%;
+ }
+#Youtube {
+    margin-top: 8%;
+}
+.tube-vids {
+    margin: 10%;
+}
+.tube-vids iframe {
+    width: 100%;
+    height: inherit;
+    margin-bottom: 8%;
+}
+    #msg {
+        padding-bottom: 10%;
+    }
+    #msg h2 {
+    padding-bottom: 0%;
+}
+    #msg p {
+    padding: 5%;
+}
+}
+
+/************************ Small devices (landscape phones, 576px and up) *****************************/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .nav-item a {
+    margin-left: -1%;
+}
+    .navbar-brand #logo {
+        margin-top: 2%;
+}
+    .nav-item .icon-cart {
+    margin-left: -1%;
+    width: 30px;
+}
+    .nav-item ion-icon {
+    font-size: 19px;
+    }
+    #mainNav.navbar-shrink .nav-link.active {
+        color: #999999 !important;
+}
+    #mainNav.navbar-shrink .nav-item a {
+    color: #122947 !important;
+    margin-left: -12%;
+}
+    #mainNav.navbar-shrink .nav-link:hover {
+           color: #999 !important;
+}
+#hero {
+    padding-top: 20%;
+}
+    #hero img {
+    width: 60%;
+    height: 80vh;
+    object-fit: cover;
+    object-fit: contain;
+    margin-top: -8%;
+}
+.hero-intro h6 {
+    text-align: center;
+    margin-bottom: 5%;
+    margin-top: -3%;
+}
+.hero-intro p {
+    padding-bottom: 20%;
+}
+#mission img {
+    width: 25%;
+    margin-top: -19%;
+    margin-bottom: 10%;
+}
+.mission-intro .msg-box {
+    padding-bottom: 4%;
+}
+.mission-intro .msg-box p {
+    font-size: 15px;
+}
+#Youtube {
+    margin-top: 8%;
+}
+.tube-vids {
+    margin: 10%;
+}
+.tube-vids iframe {
+    width: 100%;
+    height: inherit;
+    margin-bottom: 5%;
+}
+#products {
+    margin-top: 12%;
+}
+#products img {
+    width: 50%;
+    height: 80vh;
+    object-fit: cover;
+    object-fit: contain;
+    margin-left: 25%;
+}
+.products-intro .col-md-4 {
+    margin-bottom: 0%;
+    padding: 3%;
+}
+.products-intro h3 {
+    font-size: 20px;
+    margin-bottom: -8%;
+    text-align: center;
+}
+.products-intro h6 {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: -8%;
+    margin-bottom: 5%;
+}
+.products-intro p {
+    color: #122947;
+    letter-spacing: 3px;
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+}
+#msg {
+    margin-top: 10%;
+    padding-top: 5%;
+}
+#msg h2 {
+    font-size: 40px;
+    padding-top: 5%;
+    padding-bottom: 0%;
+}
+#msg p {
+    font-size: 16px;
+    padding-top: 2%;
+    padding-bottom: 10%;
+}
+#sub {
+    padding-top: 5%;
+}
+#sub form {
+    padding-bottom: 10%;
+}
+#sub form button {
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+#sub h3 {
+    font-size: 28px;
+    padding-bottom: 2%;
+}
+#sub p {
+    font-size: 15px;
+    padding-bottom: 5%;
+    color: #979797;
+}
+#sub ::placeholder {
+    font-size: 14px;
+    letter-spacing: 1px;
+ }
+    footer p {
+    margin-bottom: 2%;
+    margin-top: 3%;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+    footer .footer-intro {
+    margin-top: 5%;
+    margin-bottom: 0%;
+}
+    footer li {
+    font-size: 18px;
+    letter-spacing: 2px;
+ }
+    
+}
+
+/***************************** Medium devices (tablets, 768px and up) ********************************/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .nav-item a {
+    margin-left: -1%;
+}
+    .navbar-brand #logo {
+    width: 180px;
+        margin-top: 2%;
+}
+    .nav-item .icon-cart {
+    margin-left: -1%;
+    width: 30px;
+}
+    .nav-item ion-icon {
+    font-size: 19px;
+    }
+    #mainNav.navbar-shrink .nav-link.active {
+        color: #999999 !important;
+}
+    #mainNav.navbar-shrink .nav-item a {
+    color: #999 !important;
+}
+    #mainNav.navbar-shrink .nav-link:hover {
+           color: #999 !important;
+} 
+#hero {
+    padding-top: 15%;
+}
+.hero-intro h1 {
+    font-size: 5vh;
+    margin-bottom: 0%;
+    color: transparent;
+    -webkit-text-stroke: 1px #7c8082;
+}
+#hero img {
+    width: 60%;
+    height: 80vh;
+    object-fit: cover;
+    object-fit: contain;
+    margin-top: -40%;
+}
+.hero-intro h6 {
+    margin-top: -38%;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 5%;
+}
+.hero-intro p {
+    font-size: 16px;
+    line-height: 1.6;
+    padding-bottom: 10%;
+}
+#mission img {
+    width: 15%;
+    margin-top: -12%;
+    margin-bottom: 5%;
+}
+.mission-intro .msg-box {
+    padding-bottom: 4%;
+}
+.mission-intro .msg-box h6 {
+    font-size: 17px;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+.mission-intro .msg-box p {
+    font-size: 16px;
+    margin-bottom: 10%;
+}
+.mission-intro .msg-box img {
+    position: absolute;
+    top: 230%;
+    left: 80%;
+}
+#Youtube {
+    margin-top: 8%;
+}
+.tube-vids {
+    margin: 10%;
+}
+.tube-vids iframe {
+    width: 100%;
+    height: inherit;
+}
+#products {
+    margin-top: 12%;
+}
+.products-intro .col-md-4 {
+    margin-bottom: 0%;
+    padding: 3%;
+}
+.products-intro .img-bg:hover {
+    margin-bottom: 5%;
+}
+.products-intro .img-bg-one:hover {
+    background: #f8cfa9;
+    margin-bottom: 5%;
+}
+.products-intro h3 {
+    font-size: 20px;
+    margin-bottom: 5%;
+}
+.products-intro h6 {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 5%;
+}
+.products-intro p {
+    color: #122947;
+    letter-spacing: 3px;
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+}
+#msg {
+    margin-top: 10%;
+    padding-top: 5%;
+}
+#msg h2 {
+    font-size: 40px;
+    padding-top: 5%;
+    padding-bottom: 0%;
+}
+#msg p {
+    font-size: 16px;
+    padding-top: 2%;
+    padding-bottom: 10%;
+}
+#sub {
+    padding-top: 5%;
+}
+#sub form {
+    padding-bottom: 10%;
+    float: right;
+}
+#sub form button {
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+#sub h3 {
+    font-size: 28px;
+    padding-bottom: 2%;
+}
+#sub p {
+    font-size: 15px;
+    padding-bottom: 5%;
+    color: #979797;
+}
+#sub ::placeholder {
+    font-size: 14px;
+    letter-spacing: 1px;
+ }
+    footer p {
+    margin-bottom: 2%;
+    margin-top: 3%;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+    footer .footer-intro {
+    margin-top: 5%;
+    margin-bottom: 0%;
+}
+    footer li {
+    font-size: 18px;
+    letter-spacing: 2px;
+ } 
+    
+    
+}
+
+/************************ Large devices (desktops, 992px and up) ***********************/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .nav-item a {
+    padding: 7px 25px !important;
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+    .navbar-brand #logo {
+    width: 190px;
+    margin-top: 2%;
+}
+    .nav-item .icon-cart {
+    width: 28px;
+}
+    .nav-item ion-icon {
+        font-size: 19px;
+    }
+    #mainNav {
+    background-color: transparent;
+}
+    #mainNav.navbar-shrink .nav-link.active {
+        color: #999999 !important;
+}
+    #mainNav.navbar-shrink .nav-item a {
+    color: #999999 !important;
+}
+    #mainNav.navbar-shrink .nav-link:hover {
+           color: #999 !important;
+}
+#hero {
+    padding-top: 10%;
+}
+.hero-intro h1 {
+    font-size: 5vh;
+    margin-bottom: 0%;
+    color: transparent;
+    -webkit-text-stroke: 1px #7c8082;
+}
+#hero img {
+    width: 60%;
+    height: 80vh;
+    object-fit: cover;
+    object-fit: contain;
+    margin-top: -38%;
+}
+.hero-intro h6 {
+    margin-top: -35%;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 4%;
+}
+.hero-intro p {
+    font-size: 16px;
+    line-height: 1.6;
+    padding-bottom: 10%;
+}
+#mission img {
+    width: 15%;
+    margin-top: -12%;
+    margin-bottom: 5%;
+}
+.mission-intro .msg-box {
+    padding-bottom: 4%;
+}
+.mission-intro .msg-box h6 {
+    font-size: 17px;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+.mission-intro .msg-box p {
+    font-size: 16px;
+    margin-bottom: 10%;
+}
+.mission-intro .msg-box img {
+    position: absolute;
+    top: 230%;
+    left: 80%;
+}
+#Youtube {
+    margin-top: 8%;
+}
+.tube-vids {
+    margin: 10%;
+}
+.tube-vids iframe {
+    width: 100%;
+    height: inherit;
+}
+#products {
+    margin-top: 12%;
+}
+.products-intro .col-md-4 {
+    margin-bottom: 0%;
+    padding: 3%;
+}
+.products-intro .img-bg:hover {
+    margin-bottom: 5%;
+}
+.products-intro .img-bg-one:hover {
+    background: #f8cfa9;
+    margin-bottom: 5%;
+}
+.products-intro h3 {
+    font-size: 20px;
+    margin-bottom: 5%;
+}
+.products-intro h6 {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 5%;
+}
+.products-intro p {
+    color: #122947;
+    letter-spacing: 3px;
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+} 
+#msg {
+    margin-top: 10%;
+    padding-top: 5%;
+}
+#msg h2 {
+    font-size: 50px;
+    padding-top: 5%;
+    padding-bottom: 0%;
+}
+#msg p {
+    font-size: 16px;
+    padding-top: 2%;
+    padding-bottom: 10%;
+}
+#sub {
+    padding-top: 5%;
+}
+#sub form {
+    padding-bottom: 10%;
+    float: right;
+}
+#sub form button {
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+#sub h3 {
+    font-size: 30px;
+    padding-bottom: 2%;
+}
+#sub p {
+    font-size: 16px;
+    padding-bottom: 5%;
+}
+#sub ::placeholder {
+    font-size: 14px;
+    letter-spacing: 1px;
+ }
+    footer p {
+    margin-bottom: 2%;
+    margin-top: 3%;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+    footer .footer-intro {
+    margin-top: 5%;
+    margin-bottom: 0%;
+}
+    footer li {
+    font-size: 20px;
+    letter-spacing: 2px;
+ }   
+}
+
+/************************ Extra large devices (large desktops, 1200px and up) *************************/
+@media (min-width: 1200px) {
+    .nav-item a {
+    padding: 7px 25px !important;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+    .navbar-brand #logo {
+    width: 180px;
+        margin-top: 2%;
+}
+    .nav-item .icon-cart {
+    width: 30px !important;
+}
+    .nav-item ion-icon {
+        font-size: 20px;
+    }
+    #mainNav {
+    background-color: transparent;
+}
+    #mainNav.navbar-shrink .nav-link.active {
+        color: #999999 !important;
+}
+    #mainNav.navbar-shrink .nav-item a {
+    color: #999 !important;
+}
+    #mainNav.navbar-shrink .nav-link:hover {
+           color: #5e62d1 !important;
+} 
+#hero {
+    padding-top: 10%;
+}
+.hero-intro h1 {
+    font-size: 15vh;
+    margin-bottom: 0%;
+    color: transparent;
+    -webkit-text-stroke: 1px #7c8082;
+}
+#hero img {
+    width: 60%;
+    height: 80vh;
+    object-fit: cover;
+    object-fit: contain;
+    margin-top: -3%;
+}
+.hero-intro h6 {
+    margin-top: -1%;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 3%;
+}
+.hero-intro p {
+    font-size: 17px;
+    line-height: 1.6;
+    padding-bottom: 15%;
+}
+#mission img {
+    width: 18%;
+    margin-top: -15%;
+    margin-bottom: 5%;
+}
+.mission-intro .msg-box {
+    padding-bottom: 2%;
+}
+.mission-intro .msg-box h6 {
+    font-size: 19px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+.mission-intro .msg-box p {
+    font-size: 17px;
+    margin-bottom: 10%;
+}
+.mission-intro .msg-box img {
+    position: absolute;
+    top: 230%;
+    left: 80%;
+}
+#Youtube {
+    margin-top: 9%;
+}
+#products {
+    margin-top: 12%;
+}
+.products-intro .col-md-4 {
+    margin-bottom: 0%;
+    padding: 3%;
+}
+.products-intro .img-bg:hover {
+    margin-bottom: 5%;
+}
+.products-intro .img-bg-one:hover {
+    background: #f8cfa9;
+    margin-bottom: 5%;
+}
+.products-intro h3 {
+    font-size: 28px;
+    margin-bottom: 5%;
+}
+.products-intro h6 {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 5%;
+}
+.products-intro p {
+    color: #122947;
+    letter-spacing: 3px;
+    font-size: 17px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+}
+#msg {
+    margin-top: 10%;
+    padding-top: 5%;
+}
+#msg h2 {
+    font-size: 60px;
+    padding-top: 5%;
+    padding-bottom: 0%;
+}
+#msg p {
+    font-size: 18px;
+    padding-top: 2%;
+    padding-bottom: 10%;
+}
+#sub {
+    padding-top: 5%;
+}
+#sub form {
+    padding-bottom: 10%;
+    float: right;
+}
+#sub form button {
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+#sub h3 {
+    font-size: 35px;
+    padding-bottom: 2%;
+}
+#sub p {
+    font-size: 17px;
+    padding-bottom: 5%;
+}
+#sub ::placeholder {
+    font-size: 14px;
+    letter-spacing: 1px;
+ }
+    footer p {
+    margin-bottom: 2%;
+    margin-top: 3%;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+    footer .footer-intro {
+    margin-top: 5%;
+    margin-bottom: 0%;
+}
+    footer li {
+    font-size: 18px;
+    letter-spacing: 2px;
+ }
+}

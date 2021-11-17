@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Assets/Images/img.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+   <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    
+    <!-- Ion Icons -->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;1,400&display=swap" rel="stylesheet">
+    
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="Assets/styles/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Assets/styles/css/animate.min.css">
+    <link rel="stylesheet" href="Assets/styles/css/home.css">
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+    <!-- AnimeJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+    
+
+    <title>home | beauty secrets</title>
+  </head>
+  <body id="pageTop" data-spy="scroll" data-target="#homePage">
+  <!--=============================================== Navigation ==========================================================-->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+         <div class="container-fluid">
+             <a class="navbar-brand" href="home.html">
+             <img id="logo" src="Assets/Images/secret.png" class="img-fluid">
+             </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span><span></span>
+              </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+             <li class="nav-item">
+                <a class="nav-link" href="CorporateHome.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="shopNow.html"><span>Shop Online</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="locations.html">Locations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="FAQ.html">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><ion-icon name="search-outline"></ion-icon></a>
+              </li>
+               <li id="cart" class="nav-item">
+                <a class="nav-link" href="cartPage.html"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="presentation" class="icon icon-cart" viewBox="0 0 64 64"><defs><path id="a" d="M0 0h40.779v46.54H0z"/></defs><g fill="none" fill-rule="evenodd" transform="translate(11.5 6)"><mask id="b" fill="#fff"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#a"/></mask><path fill="#231F20" d="M5.062 44.56h-3.01l1.15-32.71h34.376l1.148 32.71H5.062zM20.597 1.98c4.46 0 8.085 3.5 8.362 7.89H12.234c.278-4.39 3.901-7.89 8.363-7.89zM39.49 9.87h-8.55C30.659 4.386 26.15 0 20.597 0S10.533 4.386 10.254 9.87H1.29L0 46.54h40.78L39.49 9.87z" mask="url(#b)"/></g></svg><span>[0]</span></a>
+              </li>
+            </ul><!-- End navbar-nav -->
+          </div><!-- End collapse -->
+         </div><!-- End container -->
+        </nav><!-- End NavBar -->
+        
+  
+    <!--=============================================== Hero-Page ==========================================================-->
+    <div id="hero">
+        <div class="container-fluid">
+            <div class="hero-intro">
+                <div id="main">
+                    <h1 class="ml7" id="title">            
+                        <span class="text-wrapper">
+                            <span class="letters">THE DEFINITION</span>
+                        </span>
+                    </h1>
+                    <h1 class="ml8" id="title">            
+                        <span class="text-wrapper">
+                           <span class="letters">OF BEAUTY</span>
+                        </span>
+                    </h1>
+                </div>
+               <p class="txt">
+                   Beauty lies in nature. We believe that nature <span></span> provides the key to true <br> beauty. Natural skincare <span></span> products bring out our true beauty.
+               </p> 
+               <a href="shopNow.html" class="btn btn-lg" target="_blank">Shop Now</a>
+               <img src="Assets/Images/scroll-arrow.png" class="img-fluid" id="scroll">
+            </div><!-- End hero-intro -->
+        </div><!-- End container-fluid -->
+    </div><!-- End hero -->
+    <!--========================================= Distribute-Page =====================================-->
+    <div id="join">
+        <div class="container-fluid">
+            <div class="join-intro">
+                <h3>Step into the</h3>
+                <h3 id="lax-move" data-lax-optimize=true data-lax-preset="driftLeft" class="lax chunkyText">
+                 world of,
+                </h3>
+                <h3 id="lax-none">Beauty Secrets</h3>
+            </div><!-- End join-intro -->
+        </div><!-- End container-fluid -->
+    </div><!-- End join -->
+    <!--========================================= Wholesale-Page =====================================-->
+    <div id="wholesale">
+        <div class="row no-gutters" id="distribute-info">
+            <div class="col-md-6" id="img-col">
+                <div class="img-slider">
+                    <img id="dit-img-one" src="Assets/Images/i.JPG" class="img-fluid">
+                </div>
+            </div><!-- End img-col -->
+            
+            <div class="col-md-6" id="txt-col">
+                <h2>DISTRIBUTE</h2>
+                <hr id="line-first">
+                <p>
+                    For over ten years, we have delivered authentic skincare products within Ghana and beyond. We offer courier services within Ghana and deliver worldwide via DHL. We provide contract manufacturing and private manufacturing for individuals, brands and organisations. Contact Beauty Secrets for all your skincare needs.
+                </p>
+                <a data-toggle="modal" data-target="#staticBackdrop" href="#" class="btn btn-lg" target="_blank">Click to Become a Distributor</a>
+            </div><!-- End txt-col -->
+        </div><!-- End distribute-info -->
+        <!-- Modal-one -->
+        <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Become a Distributor</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                     <div class="form-group">
+                        <label for="exampleInputPassword1">Full Name</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Phone Nō</label>
+                        <input type="number" class="form-control" id="exampleInputPassword1">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button style="color: #231F20; font-family: 'Raleway', sans-serif;" type="button" class="btn" data-dismiss="modal">Close</button>
+                    <button style="background: #C9B793; color: #fff; font-family: 'Raleway', sans-serif;" type="button" class="btn">Send <i class="icon ion-ios-send"></i></button>
+                  </div>
+                </div>
+              </div>
+        </div><!-- End modal-one -->
+            
+                   
+        <div class="row no-gutters" id="wholesale-info">
+            <div class="col-md-6 order-last order-md-first" id="txt-col">
+                <h2>WHOLESALE</h2>
+                <hr id="line-first">
+                <p>
+                    Our mission is to provide organic skincare products to every part of the world. We provide  wholesale services to individuals, brands and organisations. We provide our partners with flexible payment and affordable shipping rates. Join our network of wholesalers and take your brand to the next level.
+                </p>
+                <a data-toggle="modal" data-target="#staticBackdropTwo" href="#" class="btn btn-lg" target="_blank">Click to Become a Wholesaler</a>
+            </div><!-- End txt-col --> 
+            
+            <div class="col-md-6 order-first order-md-last" id="img-col">
+                <div class="img-slider">
+                    <img id="dit-img-two" src="Assets/Images/wholesale-img.JPG" class="img-fluid">
+                </div>
+            </div><!-- End img-col -->                   
+        </div><!-- End wholesale-info -->
+        <!-- Modal-two -->
+        <div class="modal fade" id="staticBackdropTwo" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Become a Wholesaler</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                 <div class="form-group">
+                    <label for="exampleInputPassword1">Full Name</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Phone Nō</label>
+                    <input type="number" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button style="color: #231F20; font-family: 'Raleway', sans-serif;" type="button" class="btn" data-dismiss="modal">Close</button>
+                <button style="background: #C9B793; color: #fff; font-family: 'Raleway', sans-serif;" type="button" class="btn">Send <i class="icon ion-ios-send"></i></button>
+              </div>
+            </div>
+          </div>
+        </div><!-- End modal-two -->
+        
+        <div class="row no-gutters" id="manufacturing-info">
+            <div class="col-md-6" id="img-col">
+                <div class="img-slider">
+                    <img id="dit-img-three" src="Assets/Images/manufacturing-img.jpg" class="img-fluid">
+                </div>
+            </div><!-- End img-col -->
+            
+            <div class="col-md-6" id="txt-col">
+                <h2>CONTRACT MANUFACTURER</h2>
+                <hr id="line-first">
+                <p>
+                    At Solution Oasis, we pride ourselves in having years of contract manufacturing experience. We have produced several beauty products on behalf of several clients globally and have the capacity to handle large orders based on the client’s request.
+                </p>
+                <a data-toggle="modal" data-target="#staticBackdropThree" href="#" class="btn btn-lg" target="_blank">Click to Become a Manufacturer</a>
+            </div><!-- End txt-col -->
+        </div><!-- End distribute-info -->
+        <!-- Modal-one -->
+        <div class="modal fade" id="staticBackdropThree" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Become a Contract Manufacturer</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                     <div class="form-group">
+                        <label for="exampleInputPassword1">Full Name</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Phone Nō</label>
+                        <input type="number" class="form-control" id="exampleInputPassword1">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button style="color: #231F20; font-family: 'Raleway', sans-serif;" type="button" class="btn" data-dismiss="modal">Close</button>
+                    <button style="background: #C9B793; color: #fff; font-family: 'Raleway', sans-serif;" type="button" class="btn">Send <i class="icon ion-ios-send"></i></button>
+                  </div>
+                </div>
+              </div>
+        </div><!-- End modal-one -->
+    </div><!-- End wolesale -->
+    
+    
+    
+    
+    
+    
+    
+    
+    <!--=============================================== Product-Page =====================================-->
+    <!---<div id="product">
+        <div class="container">
+            <div class="product-intro">
+                <h2>Our Products</h2>
+                <p>
+                    We carry the gift of nature in its purest form from generation to generation. <span></span> Our premium brand, Beauty Secrets Africa, reveals these beauty secrets from Ghana, West Africa. Handcrafted from plant-based sources our skincare products keep your beauty alive regardless of your age or skin.  We believe that when it comes to what you apply on your skin there should be no compromise. This is why we put together the purest ingredients in its natural form to give you nothing but the best. 
+                </p>
+                <div class="row">
+                    <div class="col-md-6" id="first">
+                       <a href="BlackSoap.html" target="_blank">
+                           <img id="one" src="Assets/Images/shower-gel.jpg" class="img-fluid">
+                       </a>
+                        <h6 class="txt-1">Black Soap</h6>
+                    </div><!-- End first -->
+                    
+                    <!--<div class="col-md-6" id="second">
+                       <a href="SheaButter.html" target="_blank">
+                           <img id="two" src="Assets/Images/exotic-men.jpg" class="img-fluid">
+                       </a>
+                        <h6 class="txt-2">Shea Butter</h6>
+                    </div><!-- End second -->
+               <!-- </div><!-- End row -->
+                
+               <!-- <div class="row">
+                    <div class="col-md-6" id="third">
+                       <a href="CocoaButter.html" target="_blank">
+                          <img id="three" src="Assets/Images/cocoa-butter.jpg" class="img-fluid"> 
+                       </a>
+                        <h6 class="txt-3">Cocoa Butter</h6>
+                    </div><!-- End third -->
+              <!--  </div><!-- End row -->
+            <!--</div><!-- End product-intro -->
+       <!-- </div><!-- End container -->
+   <!-- </div><!-- End product -->
+    <!--=============================================== About-Page =====================================-->
+    <div id="about">
+        <div class="container-fluid">
+            <div class="about-intro">
+               <div class="row">
+                  <div class="col-md-6" id="about-one">
+                       <h5 class="mt-5">
+                           THE <span>
+                           GENESIS <span>
+                           OF OUR <span>
+                           BRAND
+                       </h5>
+                       <p>
+                           Beauty Secrets grew from the passion of the founder and CEO, Francesca Brenda Opoku. She grew up in Northern Ghana where her mother ran a vocational school. Growing up in a region that specialises in shea butter, she learnt at a young age how to make shea butter and other African beauty skincare products. In her quest to share what she learnt; Beauty Secrets was birthed. This venture has been a success as she has been able to create quality Ghanaian skincare products and make a tangible social impact.
+                       </p>
+                       <a id="first-link" href="about.html" class="btn"> 
+                           <ion-icon class="left" ios="arrow-forward-outline" md="arrow-forward-sharp"></ion-icon> 
+                            Read more
+                           <ion-icon class="right" ios="arrow-forward-outline" md="arrow-forward-sharp"></ion-icon>
+                       </a>
+                   </div><!-- End about-one -->
+                   <div class="col-md-6" id="about-two">
+                       <img src="Assets/Images/hibiscus_1200x.png" class="img-fluid">
+                   </div><!-- End about-two -->
+               </div><!-- End row -->
+            </div><!-- End about-intro -->
+        </div><!-- End container-fluid -->
+    </div><!-- End about -->
+    <!--=============================================== Story-Page =====================================-->
+    <div id="story">
+       <div class="container-fluid">
+           <div class="story-intro">
+            <img id="img" src="Assets/Images/story-img-three.jpg" class="img-fluid img-one">
+            <img id="img" src="Assets/Images/story-six.jpg" class="img-fluid img-two">
+            <img id="img" src="Assets/Images/story-three.jpg" class="img-fluid img-three">
+            <img id="img" src="Assets/Images/story-img-two.jpg" class="img-fluid img-four">
+            <img id="img" src="Assets/Images/story-img.JPG" class="img-fluid img-five">
+            <img id="img" src="Assets/Images/story-img-one.jpg" class="img-fluid img-seven">
+        </div><!-- End story-intro -->
+       </div><!-- End container-fluid -->
+    </div><!-- End story -->
+    <!--=============================================== Footer ===================================-->
+    <footer id="footer">
+    <div class="main-footer">
+     <div class="container-fluid">
+      <img width="1200px" src="Assets/Images/footer.PNG" class="my-5 d-flex mx-auto img-fluid" alt="footerLine">
+       <div class="row"> 
+         <div class="col-md-4" id="first-footer">
+           <h3>Quick Links</h3>
+           <hr id="second-line">
+           <li><a href="home.html"> - Home</a></li>
+           <li><a href="about.html"> - About Us</a></li>
+           <li><a href="shopNow.html"> - Shop Online</a></li>
+           <li><a href="locations.html"> - Locations</a></li>
+           <li><a href="FAQ.html"> - FAQ</a></li>
+           <li><a href="contact.html"> - Contact</a></li>
+         </div><!-- End first-footer -->
+         
+         <div class="col-md-4" id="second-footer">
+           <h3>Follow Us</h3>
+           <hr id="second-line">
+           <li><a href="https://www.facebook.com/beautysecretsghana" target="_blank"><li id="second" class="faceB"><span>- Facebook</span></li></a></li>
+           <li><a href="https://www.instagram.com/beautysecretsafrica_" target="_blank"><li id="third" class="insta"><span>- Instagram</span></li></a></li>
+         </div><!-- End second-footer -->
+         
+         <div class="col-md-4 align-self-center pt-4" id="third-footer">
+           <form class="form-inline">
+              <div class="form-group mb-2">
+                <input type="text" class="form-control" id="inputEmail" placeholder="Your email address">
+              </div>
+              <button type="submit" class="btn mb-2">subscribe</button>
+            </form><!-- End form -->
+         </div><!-- End third-footer -->
+       </div><!-- End row -->
+       <br>
+       <br>
+       <div id="bouncebtn" class="animated bounce infinite">
+           <a style="float: right;" href="#pageTop"><i class="fas fa-arrow-up"></i></a>
+       </div>
+       <p>All rights reserved. Copyright &copy; 2020</p>
+       
+     </div><!-- End container-fluid -->
+    </div><!-- End main-footer -->
+   </footer>
+   <!--=============================================== JavaScript ==========================================================-->
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+      <script src="Assets/styles/js/jquery-3.2.1.js"></script>
+      <script src="https://unpkg.com/scrollreveal"></script>
+      <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+      <script src="Assets/styles/js/popper.min.js"></script>
+      <script src="Assets/styles/js/bootstrap.min.js"></script>
+      <!-- Custom Script -->
+      <script src="Assets/styles/js/lax.min.js"></script>
+      <script src="Assets/styles/js/rellax.min.js"></script>
+      <script src="Assets/styles/js/home.js"></script>
+      </body>
+</html>
