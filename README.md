@@ -22,19 +22,19 @@
 ## Project Images
 
 #### `Main Screen`
-<img src="https://github.com/DavidDanso/beauty-secrets-/blob/master/Assets/snapshoots/main.png" width=400 />
+<img src="https://github.com/DavidDanso/beauty-secrets-/blob/master/Assets/snapshoots/main.png" width=500 />
 
 #### `Home Screen`
-<img src="https://github.com/DavidDanso/beauty-secrets-/blob/master/Assets/snapshoots/home.png" width=400 />
+<img src="https://github.com/DavidDanso/beauty-secrets-/blob/master/Assets/snapshoots/home.png" width=500 />
 
 #### `Shop Screen`
-<img src="https://github.com/DavidDanso/beauty-secrets-/blob/master/Assets/snapshoots/shop.png" width=400 />
+<img src="https://github.com/DavidDanso/beauty-secrets-/blob/master/Assets/snapshoots/shop.png" width=500 />
 
 #### `Product Screen`
-<img src="https://github.com/DavidDanso/beauty-secrets-/blob/master/Assets/snapshoots/product.png" width=400 />
+<img src="https://github.com/DavidDanso/beauty-secrets-/blob/master/Assets/snapshoots/product.png" width=500 />
 
 #### `Checkout Screen`
-<img src="https://github.com/DavidDanso/beauty-secrets-/blob/master/Assets/snapshoots/checkout_1.png" width=400 />
+<img src="https://github.com/DavidDanso/beauty-secrets-/blob/master/Assets/snapshoots/checkout_1.png" width=500 />
 
 #### `Checkout Screen`
-<img src="https://github.com/DavidDanso/beauty-secrets-/blob/master/Assets/snapshoots/checkout_2.png" width=400 />
+<img src="https://github.com/DavidDanso/beauty-secrets-/blob/master/Assets/snapshoots/checkout_2.png" width=500 />
