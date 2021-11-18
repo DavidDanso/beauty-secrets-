@@ -10,6 +10,14 @@
 
 ### An e-commerce skin-care page that sells organic skin care products to everyone regardless of age, sex, race etc.
 
+## Frameworks & Tools Used
+`Adobe XD`
+`GSAP`
+`JQUERY`
+`JAVASCRIPT`
+`HTML`
+`CSS`
+`BOOTSTRAP`
 
 ## Project Images
 
